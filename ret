@@ -1,0 +1,516 @@
+The compiled files have been sent to harp.
+/upb/departments/pc2/users/x/xchen/bdw_fpga_design/bin
+Graph ./youtube.ungraph.txt is loaded.
+vertex num: 1157828
+edge num: 2987624
+The graph is divided into 81 partitions
+Found 1 platforms!
+Found 1 devices!
+soft PageRank starts.
+  0    1.129215
+  1    0.613110
+  2    0.390234
+  3    0.274638
+  4    0.197615
+  5    0.145508
+  6    0.108095
+  7    0.081124
+  8    0.061245
+  9    0.046519
+[INFO] Software PR takes 0.35151 seconds.
+soft PageRank with partition starts.
+cpu single-thread takes 0.000001 to finish one task.
+cpu single-thread takes 0.000000 to finish one task.
+cpu single-thread takes 0.000000 to finish one task.
+cpu single-thread takes 0.000000 to finish one task.
+cpu single-thread takes 0.000000 to finish one task.
+cpu single-thread takes 0.000000 to finish one task.
+cpu single-thread takes 0.000000 to finish one task.
+cpu single-thread takes 0.000000 to finish one task.
+cpu single-thread takes 0.000000 to finish one task.
+  0    0.850000
+cpu single-thread takes 0.025408 to finish one task.
+cpu single-thread takes 0.017757 to finish one task.
+cpu single-thread takes 0.015383 to finish one task.
+cpu single-thread takes 0.014295 to finish one task.
+cpu single-thread takes 0.013049 to finish one task.
+cpu single-thread takes 0.014066 to finish one task.
+cpu single-thread takes 0.010971 to finish one task.
+cpu single-thread takes 0.010751 to finish one task.
+cpu single-thread takes 0.010514 to finish one task.
+  1    0.124974
+cpu single-thread takes 0.017370 to finish one task.
+cpu single-thread takes 0.013250 to finish one task.
+cpu single-thread takes 0.012043 to finish one task.
+cpu single-thread takes 0.011695 to finish one task.
+cpu single-thread takes 0.011254 to finish one task.
+cpu single-thread takes 0.012421 to finish one task.
+cpu single-thread takes 0.010967 to finish one task.
+cpu single-thread takes 0.010752 to finish one task.
+cpu single-thread takes 0.010516 to finish one task.
+  2    0.106228
+cpu single-thread takes 0.017400 to finish one task.
+cpu single-thread takes 0.013181 to finish one task.
+cpu single-thread takes 0.012028 to finish one task.
+cpu single-thread takes 0.011871 to finish one task.
+cpu single-thread takes 0.011565 to finish one task.
+cpu single-thread takes 0.012629 to finish one task.
+cpu single-thread takes 0.011137 to finish one task.
+cpu single-thread takes 0.010794 to finish one task.
+cpu single-thread takes 0.010571 to finish one task.
+  3    0.090294
+cpu single-thread takes 0.017409 to finish one task.
+cpu single-thread takes 0.013202 to finish one task.
+cpu single-thread takes 0.011999 to finish one task.
+cpu single-thread takes 0.011689 to finish one task.
+cpu single-thread takes 0.011258 to finish one task.
+cpu single-thread takes 0.012388 to finish one task.
+cpu single-thread takes 0.011020 to finish one task.
+cpu single-thread takes 0.010772 to finish one task.
+cpu single-thread takes 0.010581 to finish one task.
+  4    0.076750
+cpu single-thread takes 0.017374 to finish one task.
+cpu single-thread takes 0.013147 to finish one task.
+cpu single-thread takes 0.012036 to finish one task.
+cpu single-thread takes 0.011720 to finish one task.
+cpu single-thread takes 0.011236 to finish one task.
+cpu single-thread takes 0.012379 to finish one task.
+cpu single-thread takes 0.010933 to finish one task.
+cpu single-thread takes 0.010727 to finish one task.
+cpu single-thread takes 0.010514 to finish one task.
+  5    0.065237
+cpu single-thread takes 0.017359 to finish one task.
+cpu single-thread takes 0.013171 to finish one task.
+cpu single-thread takes 0.012061 to finish one task.
+cpu single-thread takes 0.011661 to finish one task.
+cpu single-thread takes 0.011256 to finish one task.
+cpu single-thread takes 0.012398 to finish one task.
+cpu single-thread takes 0.010982 to finish one task.
+cpu single-thread takes 0.010787 to finish one task.
+cpu single-thread takes 0.010509 to finish one task.
+  6    0.055452
+cpu single-thread takes 0.017403 to finish one task.
+cpu single-thread takes 0.013150 to finish one task.
+cpu single-thread takes 0.012057 to finish one task.
+cpu single-thread takes 0.011648 to finish one task.
+cpu single-thread takes 0.011262 to finish one task.
+cpu single-thread takes 0.012585 to finish one task.
+cpu single-thread takes 0.010964 to finish one task.
+cpu single-thread takes 0.010756 to finish one task.
+cpu single-thread takes 0.010524 to finish one task.
+  7    0.047134
+cpu single-thread takes 0.017369 to finish one task.
+cpu single-thread takes 0.013162 to finish one task.
+cpu single-thread takes 0.011999 to finish one task.
+cpu single-thread takes 0.011728 to finish one task.
+cpu single-thread takes 0.011244 to finish one task.
+cpu single-thread takes 0.012341 to finish one task.
+cpu single-thread takes 0.010982 to finish one task.
+cpu single-thread takes 0.010728 to finish one task.
+cpu single-thread takes 0.010558 to finish one task.
+  8    0.040064
+cpu single-thread takes 0.017379 to finish one task.
+cpu single-thread takes 0.013202 to finish one task.
+cpu single-thread takes 0.012068 to finish one task.
+cpu single-thread takes 0.011723 to finish one task.
+cpu single-thread takes 0.011244 to finish one task.
+cpu single-thread takes 0.012365 to finish one task.
+cpu single-thread takes 0.010950 to finish one task.
+cpu single-thread takes 0.010758 to finish one task.
+cpu single-thread takes 0.010519 to finish one task.
+  9    0.034054
+[INFO] Software PageRank with partition takes 1.02975 seconds.
+Verify PR with partition: 
+CPU multi-thread processing.
+ThreadPool is created.
+Threadpool is initialized.
+cpu multi-thread takes 0.000001 to finish one task.
+cpu multi-thread takes 0.000000 to finish one task.
+cpu multi-thread takes 0.000000 to finish one task.
+cpu multi-thread takes 0.000001 to finish one task.
+cpu multi-thread takes 0.000000 to finish one task.
+cpu multi-thread takes 0.000000 to finish one task.
+cpu multi-thread takes 0.000000 to finish one task.
+cpu multi-thread takes 0.000001 to finish one task.
+cpu multi-thread takes 0.000000 to finish one task.
+  0    0.850000
+cpu multi-thread takes 0.000001 to finish one task.
+cpu multi-thread takes 0.000000 to finish one task.
+cpu multi-thread takes 0.000000 to finish one task.
+cpu multi-thread takes 0.000001 to finish one task.
+cpu multi-thread takes 0.000000 to finish one task.
+cpu multi-thread takes 0.000000 to finish one task.
+cpu multi-thread takes 0.000001 to finish one task.
+cpu multi-thread takes 0.000000 to finish one task.
+cpu multi-thread takes 0.000000 to finish one task.
+  1    0.000000
+cpu multi-thread takes 0.000001 to finish one task.
+cpu multi-thread takes 0.000000 to finish one task.
+cpu multi-thread takes 0.000000 to finish one task.
+cpu multi-thread takes 0.000000 to finish one task.
+cpu multi-thread takes 0.000000 to finish one task.
+cpu multi-thread takes 0.000000 to finish one task.
+cpu multi-thread takes 0.000000 to finish one task.
+cpu multi-thread takes 0.000000 to finish one task.
+cpu multi-thread takes 0.000000 to finish one task.
+  2    0.000000
+cpu multi-thread takes 0.000000 to finish one task.
+cpu multi-thread takes 0.000000 to finish one task.
+cpu multi-thread takes 0.000000 to finish one task.
+cpu multi-thread takes 0.000000 to finish one task.
+cpu multi-thread takes 0.000000 to finish one task.
+cpu multi-thread takes 0.000000 to finish one task.
+cpu multi-thread takes 0.000000 to finish one task.
+cpu multi-thread takes 0.000000 to finish one task.
+cpu multi-thread takes 0.000000 to finish one task.
+  3    0.000000
+cpu multi-thread takes 0.000001 to finish one task.
+cpu multi-thread takes 0.000000 to finish one task.
+cpu multi-thread takes 0.000000 to finish one task.
+cpu multi-thread takes 0.000000 to finish one task.
+cpu multi-thread takes 0.000000 to finish one task.
+cpu multi-thread takes 0.000000 to finish one task.
+cpu multi-thread takes 0.000000 to finish one task.
+cpu multi-thread takes 0.000000 to finish one task.
+cpu multi-thread takes 0.000000 to finish one task.
+  4    0.000000
+cpu multi-thread takes 0.000001 to finish one task.
+cpu multi-thread takes 0.000000 to finish one task.
+cpu multi-thread takes 0.000000 to finish one task.
+cpu multi-thread takes 0.000000 to finish one task.
+cpu multi-thread takes 0.000000 to finish one task.
+cpu multi-thread takes 0.000000 to finish one task.
+cpu multi-thread takes 0.000000 to finish one task.
+cpu multi-thread takes 0.000000 to finish one task.
+cpu multi-thread takes 0.000000 to finish one task.
+  5    0.000000
+cpu multi-thread takes 0.000001 to finish one task.
+cpu multi-thread takes 0.000000 to finish one task.
+cpu multi-thread takes 0.000000 to finish one task.
+cpu multi-thread takes 0.000000 to finish one task.
+cpu multi-thread takes 0.000000 to finish one task.
+cpu multi-thread takes 0.000000 to finish one task.
+cpu multi-thread takes 0.000000 to finish one task.
+cpu multi-thread takes 0.000000 to finish one task.
+cpu multi-thread takes 0.000000 to finish one task.
+  6    0.000000
+cpu multi-thread takes 0.000001 to finish one task.
+cpu multi-thread takes 0.000000 to finish one task.
+cpu multi-thread takes 0.000000 to finish one task.
+cpu multi-thread takes 0.000000 to finish one task.
+cpu multi-thread takes 0.000000 to finish one task.
+cpu multi-thread takes 0.000000 to finish one task.
+cpu multi-thread takes 0.000000 to finish one task.
+cpu multi-thread takes 0.000000 to finish one task.
+cpu multi-thread takes 0.000000 to finish one task.
+  7    0.000000
+cpu multi-thread takes 0.000001 to finish one task.
+cpu multi-thread takes 0.000000 to finish one task.
+cpu multi-thread takes 0.000000 to finish one task.
+cpu multi-thread takes 0.000000 to finish one task.
+cpu multi-thread takes 0.000000 to finish one task.
+cpu multi-thread takes 0.000000 to finish one task.
+cpu multi-thread takes 0.000000 to finish one task.
+cpu multi-thread takes 0.000000 to finish one task.
+cpu multi-thread takes 0.000013 to finish one task.
+  8    0.000000
+cpu multi-thread takes 0.000001 to finish one task.
+cpu multi-thread takes 0.000000 to finish one task.
+cpu multi-thread takes 0.000000 to finish one task.
+cpu multi-thread takes 0.000000 to finish one task.
+cpu multi-thread takes 0.000000 to finish one task.
+cpu multi-thread takes 0.000000 to finish one task.
+cpu multi-thread takes 0.000000 to finish one task.
+cpu multi-thread takes 0.000000 to finish one task.
+cpu multi-thread takes 0.000000 to finish one task.
+  9    0.000000
+[INFO] CPU PR with partition and multi-thread takes 0.0163688 seconds.
+Verify CPU PR with partition: 
+Hybrid multi-thread processing.
+ThreadPool is created.
+Threadpool is initialized.
+set kernel env.
+Creating graph processing kernels.
+All the shared memory objects are mapped successfully.
+vetexnum edgenum 109252 ,33903
+cpu multi-thread takes 0.000001 to finish one task.
+cpu multi-thread takes 0.000001 to finish one task.
+cpu multi-thread takes 0.000001 to finish one task.
+cpu multi-thread takes 0.000001 to finish one task.
+cpu multi-thread takes 0.000001 to finish one task.
+cpu multi-thread takes 0.000000 to finish one task.
+cpu multi-thread takes 0.000000 to finish one task.
+cpu multi-thread takes 0.000000 to finish one task.
+fpga run time 0.008921
+vetexnum edgenum 131072 ,17231
+fpga run time 0.005413
+vetexnum edgenum 131072 ,12652
+fpga run time 0.005964
+vetexnum edgenum 131072 ,249449
+fpga run time 0.005964
+vetexnum edgenum 131072 ,16038
+fpga run time 0.005705
+vetexnum edgenum 131072 ,82180
+fpga run time 0.005710
+vetexnum edgenum 131072 ,226794
+fpga run time 0.005713
+vetexnum edgenum 131072 ,426963
+fpga run time 0.005868
+vetexnum edgenum 131072 ,1747834
+fpga run time 0.005977
+FPGA takes 0.062827 to finish one task.
+  0    0.850000
+vetexnum edgenum 109252 ,33903
+cpu multi-thread takes 0.000001 to finish one task.
+cpu multi-thread takes 0.000001 to finish one task.
+cpu multi-thread takes 0.000001 to finish one task.
+cpu multi-thread takes 0.000001 to finish one task.
+cpu multi-thread takes 0.000001 to finish one task.
+cpu multi-thread takes 0.000000 to finish one task.
+cpu multi-thread takes 0.000000 to finish one task.
+cpu multi-thread takes 0.000001 to finish one task.
+fpga run time 0.005951
+vetexnum edgenum 131072 ,17231
+fpga run time 0.005849
+vetexnum edgenum 131072 ,12652
+fpga run time 0.005881
+vetexnum edgenum 131072 ,249449
+fpga run time 0.006205
+vetexnum edgenum 131072 ,16038
+fpga run time 0.005924
+vetexnum edgenum 131072 ,82180
+fpga run time 0.005757
+vetexnum edgenum 131072 ,226794
+fpga run time 0.005933
+vetexnum edgenum 131072 ,426963
+fpga run time 0.005972
+vetexnum edgenum 131072 ,1747834
+fpga run time 0.005906
+FPGA takes 0.059732 to finish one task.
+  1    0.000000
+vetexnum edgenum 109252 ,33903
+cpu multi-thread takes 0.000001 to finish one task.
+cpu multi-thread takes 0.000000 to finish one task.
+cpu multi-thread takes 0.000001 to finish one task.
+cpu multi-thread takes 0.000000 to finish one task.
+cpu multi-thread takes 0.000000 to finish one task.
+cpu multi-thread takes 0.000000 to finish one task.
+cpu multi-thread takes 0.000000 to finish one task.
+cpu multi-thread takes 0.000000 to finish one task.
+fpga run time 0.006069
+vetexnum edgenum 131072 ,17231
+fpga run time 0.006015
+vetexnum edgenum 131072 ,12652
+fpga run time 0.006045
+vetexnum edgenum 131072 ,249449
+fpga run time 0.006003
+vetexnum edgenum 131072 ,16038
+fpga run time 0.006056
+vetexnum edgenum 131072 ,82180
+fpga run time 0.006194
+vetexnum edgenum 131072 ,226794
+fpga run time 0.006235
+vetexnum edgenum 131072 ,426963
+fpga run time 0.006143
+vetexnum edgenum 131072 ,1747834
+fpga run time 0.006014
+FPGA takes 0.061237 to finish one task.
+  2    0.000000
+vetexnum edgenum 109252 ,33903
+cpu multi-thread takes 0.000001 to finish one task.
+cpu multi-thread takes 0.000000 to finish one task.
+cpu multi-thread takes 0.000001 to finish one task.
+cpu multi-thread takes 0.000000 to finish one task.
+cpu multi-thread takes 0.000000 to finish one task.
+cpu multi-thread takes 0.000000 to finish one task.
+cpu multi-thread takes 0.000000 to finish one task.
+cpu multi-thread takes 0.000000 to finish one task.
+fpga run time 0.006186
+vetexnum edgenum 131072 ,17231
+fpga run time 0.006069
+vetexnum edgenum 131072 ,12652
+fpga run time 0.006200
+vetexnum edgenum 131072 ,249449
+fpga run time 0.005964
+vetexnum edgenum 131072 ,16038
+fpga run time 0.005993
+vetexnum edgenum 131072 ,82180
+fpga run time 0.005997
+vetexnum edgenum 131072 ,226794
+fpga run time 0.006197
+vetexnum edgenum 131072 ,426963
+fpga run time 0.006369
+vetexnum edgenum 131072 ,1747834
+fpga run time 0.006035
+FPGA takes 0.061426 to finish one task.
+  3    0.000000
+vetexnum edgenum 109252 ,33903
+cpu multi-thread takes 0.000001 to finish one task.
+cpu multi-thread takes 0.000001 to finish one task.
+cpu multi-thread takes 0.000001 to finish one task.
+cpu multi-thread takes 0.000000 to finish one task.
+cpu multi-thread takes 0.000000 to finish one task.
+cpu multi-thread takes 0.000000 to finish one task.
+cpu multi-thread takes 0.000000 to finish one task.
+cpu multi-thread takes 0.000000 to finish one task.
+fpga run time 0.006106
+vetexnum edgenum 131072 ,17231
+fpga run time 0.006455
+vetexnum edgenum 131072 ,12652
+fpga run time 0.006182
+vetexnum edgenum 131072 ,249449
+fpga run time 0.006190
+vetexnum edgenum 131072 ,16038
+fpga run time 0.005773
+vetexnum edgenum 131072 ,82180
+fpga run time 0.005700
+vetexnum edgenum 131072 ,226794
+fpga run time 0.005922
+vetexnum edgenum 131072 ,426963
+fpga run time 0.006069
+vetexnum edgenum 131072 ,1747834
+fpga run time 0.006304
+FPGA takes 0.061129 to finish one task.
+  4    0.000000
+vetexnum edgenum 109252 ,33903
+cpu multi-thread takes 0.000001 to finish one task.
+cpu multi-thread takes 0.000000 to finish one task.
+cpu multi-thread takes 0.000001 to finish one task.
+cpu multi-thread takes 0.000000 to finish one task.
+cpu multi-thread takes 0.000000 to finish one task.
+cpu multi-thread takes 0.000000 to finish one task.
+cpu multi-thread takes 0.000000 to finish one task.
+cpu multi-thread takes 0.000000 to finish one task.
+fpga run time 0.006291
+vetexnum edgenum 131072 ,17231
+fpga run time 0.006395
+vetexnum edgenum 131072 ,12652
+fpga run time 0.006475
+vetexnum edgenum 131072 ,249449
+fpga run time 0.006264
+vetexnum edgenum 131072 ,16038
+fpga run time 0.006552
+vetexnum edgenum 131072 ,82180
+fpga run time 0.006066
+vetexnum edgenum 131072 ,226794
+fpga run time 0.006209
+vetexnum edgenum 131072 ,426963
+fpga run time 0.006306
+vetexnum edgenum 131072 ,1747834
+fpga run time 0.006207
+FPGA takes 0.063179 to finish one task.
+  5    0.000000
+vetexnum edgenum 109252 ,33903
+cpu multi-thread takes 0.000001 to finish one task.
+cpu multi-thread takes 0.000001 to finish one task.
+cpu multi-thread takes 0.000001 to finish one task.
+cpu multi-thread takes 0.000001 to finish one task.
+cpu multi-thread takes 0.000001 to finish one task.
+cpu multi-thread takes 0.000000 to finish one task.
+cpu multi-thread takes 0.000000 to finish one task.
+cpu multi-thread takes 0.000000 to finish one task.
+fpga run time 0.006410
+vetexnum edgenum 131072 ,17231
+fpga run time 0.006135
+vetexnum edgenum 131072 ,12652
+fpga run time 0.006359
+vetexnum edgenum 131072 ,249449
+fpga run time 0.006233
+vetexnum edgenum 131072 ,16038
+fpga run time 0.006345
+vetexnum edgenum 131072 ,82180
+fpga run time 0.006155
+vetexnum edgenum 131072 ,226794
+fpga run time 0.006294
+vetexnum edgenum 131072 ,426963
+fpga run time 0.006503
+vetexnum edgenum 131072 ,1747834
+fpga run time 0.006389
+FPGA takes 0.063148 to finish one task.
+  6    0.000000
+vetexnum edgenum 109252 ,33903
+cpu multi-thread takes 0.000001 to finish one task.
+cpu multi-thread takes 0.000000 to finish one task.
+cpu multi-thread takes 0.000001 to finish one task.
+cpu multi-thread takes 0.000000 to finish one task.
+cpu multi-thread takes 0.000000 to finish one task.
+cpu multi-thread takes 0.000000 to finish one task.
+cpu multi-thread takes 0.000000 to finish one task.
+cpu multi-thread takes 0.000000 to finish one task.
+fpga run time 0.006255
+vetexnum edgenum 131072 ,17231
+fpga run time 0.006110
+vetexnum edgenum 131072 ,12652
+fpga run time 0.006333
+vetexnum edgenum 131072 ,249449
+fpga run time 0.006505
+vetexnum edgenum 131072 ,16038
+fpga run time 0.006263
+vetexnum edgenum 131072 ,82180
+fpga run time 0.006498
+vetexnum edgenum 131072 ,226794
+fpga run time 0.006602
+vetexnum edgenum 131072 ,426963
+fpga run time 0.006339
+vetexnum edgenum 131072 ,1747834
+fpga run time 0.006391
+FPGA takes 0.063965 to finish one task.
+  7    0.000000
+vetexnum edgenum 109252 ,33903
+cpu multi-thread takes 0.000001 to finish one task.
+cpu multi-thread takes 0.000000 to finish one task.
+cpu multi-thread takes 0.000001 to finish one task.
+cpu multi-thread takes 0.000000 to finish one task.
+cpu multi-thread takes 0.000000 to finish one task.
+cpu multi-thread takes 0.000000 to finish one task.
+cpu multi-thread takes 0.000000 to finish one task.
+cpu multi-thread takes 0.000000 to finish one task.
+fpga run time 0.006558
+vetexnum edgenum 131072 ,17231
+fpga run time 0.006377
+vetexnum edgenum 131072 ,12652
+fpga run time 0.006717
+vetexnum edgenum 131072 ,249449
+fpga run time 0.006382
+vetexnum edgenum 131072 ,16038
+fpga run time 0.006299
+vetexnum edgenum 131072 ,82180
+fpga run time 0.006191
+vetexnum edgenum 131072 ,226794
+fpga run time 0.006415
+vetexnum edgenum 131072 ,426963
+fpga run time 0.006573
+vetexnum edgenum 131072 ,1747834
+fpga run time 0.006754
+FPGA takes 0.064657 to finish one task.
+  8    0.000000
+vetexnum edgenum 109252 ,33903
+cpu multi-thread takes 0.000001 to finish one task.
+cpu multi-thread takes 0.000000 to finish one task.
+cpu multi-thread takes 0.000001 to finish one task.
+cpu multi-thread takes 0.000000 to finish one task.
+cpu multi-thread takes 0.000000 to finish one task.
+cpu multi-thread takes 0.000000 to finish one task.
+cpu multi-thread takes 0.000000 to finish one task.
+cpu multi-thread takes 0.000000 to finish one task.
+fpga run time 0.006540
+vetexnum edgenum 131072 ,17231
+fpga run time 0.006578
+vetexnum edgenum 131072 ,12652
+fpga run time 0.006423
+vetexnum edgenum 131072 ,249449
+fpga run time 0.006513
+vetexnum edgenum 131072 ,16038
+fpga run time 0.006472
+vetexnum edgenum 131072 ,82180
+fpga run time 0.006599
+vetexnum edgenum 131072 ,226794
+fpga run time 0.006623
+vetexnum edgenum 131072 ,426963
+fpga run time 0.006612
+vetexnum edgenum 131072 ,1747834
+fpga run time 0.006491
+FPGA takes 0.065275 to finish one task.
+  9    0.000000
+[INFO] Hybird BFS with partition takes 0.687385 seconds.
+Verify hybrid BFS with partition: 
