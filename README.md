@@ -10,7 +10,7 @@
 Do not forget to set the PATH of the dataset. 
 
 ```sh
-$ cd ./src
+$ cd ./
 $ make  # make the host execution program
 $ aoc ./src/graph_fpga.cl -o ./bin/graph_fpga.aocx  # make the FPGA execution program. It takes time.
 $ cd ./bin
