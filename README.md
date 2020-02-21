@@ -1,8 +1,8 @@
 # On-the-fly-data-shuffling-for-OpenCL-based-FPGAs
 
 ## Prerequisites
-* gcc4.8 or above
-* The OpenCL SDK 16.0.2 for FPGA from Intel
+* The gcc4.8 or above
+* The Altera OpenCL SDK 16.0.2 for FPGA 
 * The De5net board 
 
 ## Run the code
@@ -12,7 +12,7 @@ Do not forget to set the PATH of the dataset.
 ```sh
 $ cd ./src
 $ make  # make the host execution program
-$ aoc ./src/graph_fpga.cl -o ./bin/graph_fpga.aocx  # make the FPGA execution program. It takes around a few hours.
+$ aoc ./src/graph_fpga.cl -o ./bin/graph_fpga.aocx  # make the FPGA execution program. It takes time.
 $ cd ./bin
 $ ./host
 ```
