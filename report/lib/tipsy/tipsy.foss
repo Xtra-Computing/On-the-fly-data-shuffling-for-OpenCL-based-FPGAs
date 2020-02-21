@@ -1,0 +1,12 @@
+[foss]
+name = tipsy
+version = 1.0.0a
+description = Facebook-style tooltip plugin for jQuery
+case = 394528
+source = true
+binary = false
+modified = true
+usage = redistributed
+license_type = MIT
+license_url = https://github.com/jaz303/tipsy/blob/master/LICENSE
+download_url = https://github.com/jaz303/tipsy

@@ -1,0 +1,1382 @@
+Compiler Command: aoc graph_fpga.cl -g --fp-relaxed --report --board de5net_a7
+Warning: Kernel 'readEdges' has unused argument 'vertexScore'
+Warning: Kernel 'readEdges' has unused argument 'edgeScoreMap'
+=========================================================================================================
+                                   *** Optimization Report ***                                        
+
+Kernels that do not use any work-item built-in functions, such as get_global_id(), are compiled for single
+work-item execution (a task). Otherwise, a kernel is compiled as an ND-Range.
+
+For tasks, the compiler will attempt to pipeline every loop in the kernel to allow multiple iterations of
+the loop to execute concurrently. If some loops are not pipelined, or not pipelined well, you may not get
+good performance.
+
+For ND-Range kernels, the loops are not pipelined. Instead, they are built to accept multiple work-items
+simultaneously. Kernel throughput is usually reduced by the largest total number of iterations of nested
+loops. A large number of threads is usually required to efficiently utilize ND-Range kernels.
+
+=========================================================================================================
+Kernel: readEdges                                                                                        
+=========================================================================================================
+The kernel is compiled for single work-item execution.
+
+The kernel has a required work-group size of (1, 1, 1).
+
+Loop Report:
+
+ + Loop "Block1" (file graph_fpga.cl line 334)
+ | Pipelined well. Successive iterations are launched every cycle.
+ | 
+ | 
+ |-+ Fully unrolled loop (file graph_fpga.cl line 353)
+ |   Loop was fully unrolled due to "#pragma unroll" annotation.
+ |   
+ |   
+ |-+ Fully unrolled loop (file graph_fpga.cl line 359)
+     Loop was fully unrolled due to "#pragma unroll" annotation.
+     
+     
+=========================================================================================================
+Kernel: gather                                                                                           
+=========================================================================================================
+The kernel is compiled for single work-item execution.
+
+The kernel has a required work-group size of (1, 1, 1).
+
+Loop Report:
+
+ + Loop "Block4"
+ | Pipelined well. Successive iterations are launched every cycle.
+ | 
+ | 
+ |-+ Fully unrolled loop (file graph_fpga.cl line 371)
+ |   Loop was fully unrolled due to "#pragma unroll" annotation.
+ |   
+ |   
+ |-+ Fully unrolled loop (file graph_fpga.cl line 376)
+   | Loop was fully unrolled due to "#pragma unroll" annotation.
+   | 
+   | 
+   |-+ Fully unrolled loop (file graph_fpga.cl line 383)
+   |   Loop was fully unrolled due to "#pragma unroll" annotation.
+   |   
+   |   
+   |-+ Fully unrolled loop (file graph_fpga.cl line 387)
+   |   Loop was fully unrolled due to "#pragma unroll" annotation.
+   |   
+   |   
+   |-+ Fully unrolled loop (file graph_fpga.cl line 446)
+       Loop was fully unrolled due to "#pragma unroll" annotation.
+       
+       
+ + Fully unrolled loop (file graph_fpga.cl line 371)
+   Loop was fully unrolled due to "#pragma unroll" annotation.
+   
+   
+ + Fully unrolled loop (file graph_fpga.cl line 376)
+   Loop was fully unrolled due to "#pragma unroll" annotation.
+   
+   
+=========================================================================================================
+Kernel: filter                                                                                           
+=========================================================================================================
+The kernel is compiled for single work-item execution.
+
+The kernel has a required work-group size of (1, 1, 1).
+
+Loop Report:
+
+ + Loop "Block6"
+ | Pipelined well. Successive iterations are launched every cycle.
+ | 
+ | 
+ |-+ Loop "Block8" (file graph_fpga.cl line 467)
+     Pipelined well. Successive iterations are launched every cycle.
+     
+     
+=========================================================================================================
+Kernel: filter1                                                                                          
+=========================================================================================================
+The kernel is compiled for single work-item execution.
+
+The kernel has a required work-group size of (1, 1, 1).
+
+Loop Report:
+
+ + Loop "Block10"
+ | Pipelined well. Successive iterations are launched every cycle.
+ | 
+ | 
+ |-+ Loop "Block12" (file graph_fpga.cl line 483)
+     Pipelined well. Successive iterations are launched every cycle.
+     
+     
+=========================================================================================================
+Kernel: filter2                                                                                          
+=========================================================================================================
+The kernel is compiled for single work-item execution.
+
+The kernel has a required work-group size of (1, 1, 1).
+
+Loop Report:
+
+ + Loop "Block14"
+ | Pipelined well. Successive iterations are launched every cycle.
+ | 
+ | 
+ |-+ Loop "Block16" (file graph_fpga.cl line 500)
+     Pipelined well. Successive iterations are launched every cycle.
+     
+     
+=========================================================================================================
+Kernel: filter3                                                                                          
+=========================================================================================================
+The kernel is compiled for single work-item execution.
+
+The kernel has a required work-group size of (1, 1, 1).
+
+Loop Report:
+
+ + Loop "Block18"
+ | Pipelined well. Successive iterations are launched every cycle.
+ | 
+ | 
+ |-+ Loop "Block20" (file graph_fpga.cl line 517)
+     Pipelined well. Successive iterations are launched every cycle.
+     
+     
+=========================================================================================================
+Kernel: filter4                                                                                          
+=========================================================================================================
+The kernel is compiled for single work-item execution.
+
+The kernel has a required work-group size of (1, 1, 1).
+
+Loop Report:
+
+ + Loop "Block22"
+ | Pipelined well. Successive iterations are launched every cycle.
+ | 
+ | 
+ |-+ Loop "Block24" (file graph_fpga.cl line 534)
+     Pipelined well. Successive iterations are launched every cycle.
+     
+     
+=========================================================================================================
+Kernel: filter5                                                                                          
+=========================================================================================================
+The kernel is compiled for single work-item execution.
+
+The kernel has a required work-group size of (1, 1, 1).
+
+Loop Report:
+
+ + Loop "Block26"
+ | Pipelined well. Successive iterations are launched every cycle.
+ | 
+ | 
+ |-+ Loop "Block28" (file graph_fpga.cl line 551)
+     Pipelined well. Successive iterations are launched every cycle.
+     
+     
+=========================================================================================================
+Kernel: filter6                                                                                          
+=========================================================================================================
+The kernel is compiled for single work-item execution.
+
+The kernel has a required work-group size of (1, 1, 1).
+
+Loop Report:
+
+ + Loop "Block30"
+ | Pipelined well. Successive iterations are launched every cycle.
+ | 
+ | 
+ |-+ Loop "Block32" (file graph_fpga.cl line 568)
+     Pipelined well. Successive iterations are launched every cycle.
+     
+     
+=========================================================================================================
+Kernel: filter7                                                                                          
+=========================================================================================================
+The kernel is compiled for single work-item execution.
+
+The kernel has a required work-group size of (1, 1, 1).
+
+Loop Report:
+
+ + Loop "Block34"
+ | Pipelined well. Successive iterations are launched every cycle.
+ | 
+ | 
+ |-+ Loop "Block36" (file graph_fpga.cl line 585)
+     Pipelined well. Successive iterations are launched every cycle.
+     
+     
+=========================================================================================================
+Kernel: filter8                                                                                          
+=========================================================================================================
+The kernel is compiled for single work-item execution.
+
+The kernel has a required work-group size of (1, 1, 1).
+
+Loop Report:
+
+ + Loop "Block38"
+ | Pipelined well. Successive iterations are launched every cycle.
+ | 
+ | 
+ |-+ Loop "Block40" (file graph_fpga.cl line 602)
+     Pipelined well. Successive iterations are launched every cycle.
+     
+     
+=========================================================================================================
+Kernel: filter9                                                                                          
+=========================================================================================================
+The kernel is compiled for single work-item execution.
+
+The kernel has a required work-group size of (1, 1, 1).
+
+Loop Report:
+
+ + Loop "Block42"
+ | Pipelined well. Successive iterations are launched every cycle.
+ | 
+ | 
+ |-+ Loop "Block44" (file graph_fpga.cl line 619)
+     Pipelined well. Successive iterations are launched every cycle.
+     
+     
+=========================================================================================================
+Kernel: filter10                                                                                         
+=========================================================================================================
+The kernel is compiled for single work-item execution.
+
+The kernel has a required work-group size of (1, 1, 1).
+
+Loop Report:
+
+ + Loop "Block46"
+ | Pipelined well. Successive iterations are launched every cycle.
+ | 
+ | 
+ |-+ Loop "Block48" (file graph_fpga.cl line 636)
+     Pipelined well. Successive iterations are launched every cycle.
+     
+     
+=========================================================================================================
+Kernel: filter11                                                                                         
+=========================================================================================================
+The kernel is compiled for single work-item execution.
+
+The kernel has a required work-group size of (1, 1, 1).
+
+Loop Report:
+
+ + Loop "Block50"
+ | Pipelined well. Successive iterations are launched every cycle.
+ | 
+ | 
+ |-+ Loop "Block52" (file graph_fpga.cl line 653)
+     Pipelined well. Successive iterations are launched every cycle.
+     
+     
+=========================================================================================================
+Kernel: filter12                                                                                         
+=========================================================================================================
+The kernel is compiled for single work-item execution.
+
+The kernel has a required work-group size of (1, 1, 1).
+
+Loop Report:
+
+ + Loop "Block54"
+ | Pipelined well. Successive iterations are launched every cycle.
+ | 
+ | 
+ |-+ Loop "Block56" (file graph_fpga.cl line 670)
+     Pipelined well. Successive iterations are launched every cycle.
+     
+     
+=========================================================================================================
+Kernel: filter13                                                                                         
+=========================================================================================================
+The kernel is compiled for single work-item execution.
+
+The kernel has a required work-group size of (1, 1, 1).
+
+Loop Report:
+
+ + Loop "Block58"
+ | Pipelined well. Successive iterations are launched every cycle.
+ | 
+ | 
+ |-+ Loop "Block60" (file graph_fpga.cl line 687)
+     Pipelined well. Successive iterations are launched every cycle.
+     
+     
+=========================================================================================================
+Kernel: filter14                                                                                         
+=========================================================================================================
+The kernel is compiled for single work-item execution.
+
+The kernel has a required work-group size of (1, 1, 1).
+
+Loop Report:
+
+ + Loop "Block62"
+ | Pipelined well. Successive iterations are launched every cycle.
+ | 
+ | 
+ |-+ Loop "Block64" (file graph_fpga.cl line 704)
+     Pipelined well. Successive iterations are launched every cycle.
+     
+     
+=========================================================================================================
+Kernel: filter15                                                                                         
+=========================================================================================================
+The kernel is compiled for single work-item execution.
+
+The kernel has a required work-group size of (1, 1, 1).
+
+Loop Report:
+
+ + Loop "Block66"
+ | Pipelined well. Successive iterations are launched every cycle.
+ | 
+ | 
+ |-+ Loop "Block68" (file graph_fpga.cl line 721)
+     Pipelined well. Successive iterations are launched every cycle.
+     
+     
+=========================================================================================================
+Kernel: processEdges                                                                                     
+=========================================================================================================
+The kernel is compiled for single work-item execution.
+
+The kernel has a required work-group size of (1, 1, 1).
+
+Loop Report:
+
+ + Fully unrolled loop (file graph_fpga.cl line 752)
+   Loop was fully unrolled due to "#pragma unroll" annotation.
+   
+   
+ + Loop "Block70" (file graph_fpga.cl line 786, line 787)
+   Pipelined with successive iterations launched every 2 cycles due to: 
+        
+       Memory dependency on Load Operation from: (file graph_fpga.cl line 768)
+         Store Operation (file graph_fpga.cl line 768)
+       Largest Critical Path Contributors:
+           66%: Load Operation  (file graph_fpga.cl line 768)
+           34%: Store Operation  (file graph_fpga.cl line 768)
+   
+   
+ + Loop "Block71" (file graph_fpga.cl line 790)
+   Pipelined well. Successive iterations are launched every cycle.
+   
+   
+=========================================================================================================
+Kernel: vertexApply                                                                                      
+=========================================================================================================
+The kernel is compiled for single work-item execution.
+
+The kernel has a required work-group size of (1, 1, 1).
+
+Loop Report:
+
+ + Loop "Block74" (file graph_fpga.cl line 852)
+   Loop was partially unrolled 8 times due to "#pragma unroll" annotation.
+   Pipelined well. Successive iterations are launched every cycle.
+   
+   
+ + Fully unrolled loop (file graph_fpga.cl line 865)
+   Loop was fully unrolled due to "#pragma unroll" annotation.
+   
+   
+=========================================================================================================
+
++--------------------------------------------------------------------+
+; Estimated Resource Usage Summary                                   ;
++----------------------------------------+---------------------------+
+; Resource                               + Usage                     ;
++----------------------------------------+---------------------------+
+; Logic utilization                      ;   72%                     ;
+; ALUTs                                  ;   35%                     ;
+; Dedicated logic registers              ;   39%                     ;
+; Memory blocks                          ;   94%                     ;
+; DSP blocks                             ;   16%                     ;
++----------------------------------------+---------------------------;
+System name: graph_fpga
+
+2019.03.12.11:16:20 Info: Doing: <b>qsys-script --quartus-project=top --script=system.tcl --Xmx512M --XX:+UseSerialGC --system-file=system.qsys</b>
+2019.03.12.11:16:40 Info: set_validation_property AUTOMATIC_VALIDATION false
+2019.03.12.11:16:40 Info: add_instance graph_fpga_system graph_fpga_system 
+2019.03.12.11:16:40 Info: add_connection acl_iface.kernel_clk graph_fpga_system.clock_reset
+2019.03.12.11:16:40 Info: add_connection acl_iface.kernel_clk2x graph_fpga_system.clock_reset2x
+2019.03.12.11:16:40 Info: add_connection acl_iface.kernel_reset graph_fpga_system.clock_reset_reset
+2019.03.12.11:16:40 Info: add_connection graph_fpga_system.avm_memgmem0_port_0_0_rw acl_iface.kernel_mem0
+2019.03.12.11:16:40 Info: add_connection graph_fpga_system.avm_memgmem0_port_1_0_rw acl_iface.kernel_mem1
+2019.03.12.11:16:40 Info: add_connection acl_iface.kernel_irq graph_fpga_system.kernel_irq
+2019.03.12.11:16:40 Info: add_instance cra_root cra_ring_root 
+2019.03.12.11:16:40 Info: set_instance_parameter_value cra_root DATA_W 64
+2019.03.12.11:16:40 Info: set_instance_parameter_value cra_root ADDR_W 5
+2019.03.12.11:16:40 Info: set_instance_parameter_value cra_root ID_W 5
+2019.03.12.11:16:40 Info: add_connection acl_iface.kernel_clk cra_root.clock
+2019.03.12.11:16:40 Info: add_connection acl_iface.kernel_reset cra_root.reset
+2019.03.12.11:16:40 Info: add_connection acl_iface.kernel_cra cra_root.cra_slave
+2019.03.12.11:16:40 Info: set_connection_parameter_value acl_iface.kernel_cra/cra_root.cra_slave baseAddress 0x0
+2019.03.12.11:16:40 Info: add_instance avs_filter_cra_cra_ring cra_ring_node 
+2019.03.12.11:16:40 Info: set_instance_parameter_value avs_filter_cra_cra_ring DATA_W 64
+2019.03.12.11:16:40 Info: set_instance_parameter_value avs_filter_cra_cra_ring RING_ADDR_W 5
+2019.03.12.11:16:40 Info: set_instance_parameter_value avs_filter_cra_cra_ring CRA_ADDR_W 4
+2019.03.12.11:16:40 Info: set_instance_parameter_value avs_filter_cra_cra_ring ID_W 5
+2019.03.12.11:16:40 Info: set_instance_parameter_value avs_filter_cra_cra_ring ID 0
+2019.03.12.11:16:40 Info: add_connection acl_iface.kernel_clk avs_filter_cra_cra_ring.clock
+2019.03.12.11:16:40 Info: add_connection acl_iface.kernel_reset avs_filter_cra_cra_ring.reset
+2019.03.12.11:16:40 Info: add_connection cra_root.ring_out avs_filter_cra_cra_ring.ring_in
+2019.03.12.11:16:40 Info: add_connection avs_filter_cra_cra_ring.cra_master graph_fpga_system.avs_filter_cra
+2019.03.12.11:16:40 Info: set_connection_parameter_value avs_filter_cra_cra_ring.cra_master/graph_fpga_system.avs_filter_cra baseAddress 0x0
+2019.03.12.11:16:40 Info: add_instance avs_filter1_cra_cra_ring cra_ring_node 
+2019.03.12.11:16:40 Info: set_instance_parameter_value avs_filter1_cra_cra_ring DATA_W 64
+2019.03.12.11:16:40 Info: set_instance_parameter_value avs_filter1_cra_cra_ring RING_ADDR_W 5
+2019.03.12.11:16:40 Info: set_instance_parameter_value avs_filter1_cra_cra_ring CRA_ADDR_W 4
+2019.03.12.11:16:40 Info: set_instance_parameter_value avs_filter1_cra_cra_ring ID_W 5
+2019.03.12.11:16:40 Info: set_instance_parameter_value avs_filter1_cra_cra_ring ID 1
+2019.03.12.11:16:40 Info: add_connection acl_iface.kernel_clk avs_filter1_cra_cra_ring.clock
+2019.03.12.11:16:40 Info: add_connection acl_iface.kernel_reset avs_filter1_cra_cra_ring.reset
+2019.03.12.11:16:40 Info: add_connection avs_filter_cra_cra_ring.ring_out avs_filter1_cra_cra_ring.ring_in
+2019.03.12.11:16:40 Info: add_connection avs_filter1_cra_cra_ring.cra_master graph_fpga_system.avs_filter1_cra
+2019.03.12.11:16:40 Info: set_connection_parameter_value avs_filter1_cra_cra_ring.cra_master/graph_fpga_system.avs_filter1_cra baseAddress 0x0
+2019.03.12.11:16:40 Info: add_instance avs_filter10_cra_cra_ring cra_ring_node 
+2019.03.12.11:16:40 Info: set_instance_parameter_value avs_filter10_cra_cra_ring DATA_W 64
+2019.03.12.11:16:40 Info: set_instance_parameter_value avs_filter10_cra_cra_ring RING_ADDR_W 5
+2019.03.12.11:16:40 Info: set_instance_parameter_value avs_filter10_cra_cra_ring CRA_ADDR_W 4
+2019.03.12.11:16:40 Info: set_instance_parameter_value avs_filter10_cra_cra_ring ID_W 5
+2019.03.12.11:16:40 Info: set_instance_parameter_value avs_filter10_cra_cra_ring ID 2
+2019.03.12.11:16:40 Info: add_connection acl_iface.kernel_clk avs_filter10_cra_cra_ring.clock
+2019.03.12.11:16:40 Info: add_connection acl_iface.kernel_reset avs_filter10_cra_cra_ring.reset
+2019.03.12.11:16:40 Info: add_connection avs_filter1_cra_cra_ring.ring_out avs_filter10_cra_cra_ring.ring_in
+2019.03.12.11:16:40 Info: add_connection avs_filter10_cra_cra_ring.cra_master graph_fpga_system.avs_filter10_cra
+2019.03.12.11:16:40 Info: set_connection_parameter_value avs_filter10_cra_cra_ring.cra_master/graph_fpga_system.avs_filter10_cra baseAddress 0x0
+2019.03.12.11:16:40 Info: add_instance avs_filter11_cra_cra_ring cra_ring_node 
+2019.03.12.11:16:40 Info: set_instance_parameter_value avs_filter11_cra_cra_ring DATA_W 64
+2019.03.12.11:16:40 Info: set_instance_parameter_value avs_filter11_cra_cra_ring RING_ADDR_W 5
+2019.03.12.11:16:40 Info: set_instance_parameter_value avs_filter11_cra_cra_ring CRA_ADDR_W 4
+2019.03.12.11:16:40 Info: set_instance_parameter_value avs_filter11_cra_cra_ring ID_W 5
+2019.03.12.11:16:40 Info: set_instance_parameter_value avs_filter11_cra_cra_ring ID 3
+2019.03.12.11:16:40 Info: add_connection acl_iface.kernel_clk avs_filter11_cra_cra_ring.clock
+2019.03.12.11:16:40 Info: add_connection acl_iface.kernel_reset avs_filter11_cra_cra_ring.reset
+2019.03.12.11:16:40 Info: add_connection avs_filter10_cra_cra_ring.ring_out avs_filter11_cra_cra_ring.ring_in
+2019.03.12.11:16:40 Info: add_connection avs_filter11_cra_cra_ring.cra_master graph_fpga_system.avs_filter11_cra
+2019.03.12.11:16:40 Info: set_connection_parameter_value avs_filter11_cra_cra_ring.cra_master/graph_fpga_system.avs_filter11_cra baseAddress 0x0
+2019.03.12.11:16:40 Info: add_instance avs_filter12_cra_cra_ring cra_ring_node 
+2019.03.12.11:16:40 Info: set_instance_parameter_value avs_filter12_cra_cra_ring DATA_W 64
+2019.03.12.11:16:40 Info: set_instance_parameter_value avs_filter12_cra_cra_ring RING_ADDR_W 5
+2019.03.12.11:16:40 Info: set_instance_parameter_value avs_filter12_cra_cra_ring CRA_ADDR_W 4
+2019.03.12.11:16:40 Info: set_instance_parameter_value avs_filter12_cra_cra_ring ID_W 5
+2019.03.12.11:16:40 Info: set_instance_parameter_value avs_filter12_cra_cra_ring ID 4
+2019.03.12.11:16:40 Info: add_connection acl_iface.kernel_clk avs_filter12_cra_cra_ring.clock
+2019.03.12.11:16:40 Info: add_connection acl_iface.kernel_reset avs_filter12_cra_cra_ring.reset
+2019.03.12.11:16:40 Info: add_connection avs_filter11_cra_cra_ring.ring_out avs_filter12_cra_cra_ring.ring_in
+2019.03.12.11:16:40 Info: add_connection avs_filter12_cra_cra_ring.cra_master graph_fpga_system.avs_filter12_cra
+2019.03.12.11:16:40 Info: set_connection_parameter_value avs_filter12_cra_cra_ring.cra_master/graph_fpga_system.avs_filter12_cra baseAddress 0x0
+2019.03.12.11:16:40 Info: add_instance avs_filter13_cra_cra_ring cra_ring_node 
+2019.03.12.11:16:40 Info: set_instance_parameter_value avs_filter13_cra_cra_ring DATA_W 64
+2019.03.12.11:16:40 Info: set_instance_parameter_value avs_filter13_cra_cra_ring RING_ADDR_W 5
+2019.03.12.11:16:40 Info: set_instance_parameter_value avs_filter13_cra_cra_ring CRA_ADDR_W 4
+2019.03.12.11:16:40 Info: set_instance_parameter_value avs_filter13_cra_cra_ring ID_W 5
+2019.03.12.11:16:40 Info: set_instance_parameter_value avs_filter13_cra_cra_ring ID 5
+2019.03.12.11:16:40 Info: add_connection acl_iface.kernel_clk avs_filter13_cra_cra_ring.clock
+2019.03.12.11:16:40 Info: add_connection acl_iface.kernel_reset avs_filter13_cra_cra_ring.reset
+2019.03.12.11:16:40 Info: add_connection avs_filter12_cra_cra_ring.ring_out avs_filter13_cra_cra_ring.ring_in
+2019.03.12.11:16:40 Info: add_connection avs_filter13_cra_cra_ring.cra_master graph_fpga_system.avs_filter13_cra
+2019.03.12.11:16:40 Info: set_connection_parameter_value avs_filter13_cra_cra_ring.cra_master/graph_fpga_system.avs_filter13_cra baseAddress 0x0
+2019.03.12.11:16:40 Info: add_instance avs_filter14_cra_cra_ring cra_ring_node 
+2019.03.12.11:16:40 Info: set_instance_parameter_value avs_filter14_cra_cra_ring DATA_W 64
+2019.03.12.11:16:40 Info: set_instance_parameter_value avs_filter14_cra_cra_ring RING_ADDR_W 5
+2019.03.12.11:16:40 Info: set_instance_parameter_value avs_filter14_cra_cra_ring CRA_ADDR_W 4
+2019.03.12.11:16:40 Info: set_instance_parameter_value avs_filter14_cra_cra_ring ID_W 5
+2019.03.12.11:16:40 Info: set_instance_parameter_value avs_filter14_cra_cra_ring ID 6
+2019.03.12.11:16:40 Info: add_connection acl_iface.kernel_clk avs_filter14_cra_cra_ring.clock
+2019.03.12.11:16:40 Info: add_connection acl_iface.kernel_reset avs_filter14_cra_cra_ring.reset
+2019.03.12.11:16:40 Info: add_connection avs_filter13_cra_cra_ring.ring_out avs_filter14_cra_cra_ring.ring_in
+2019.03.12.11:16:40 Info: add_connection avs_filter14_cra_cra_ring.cra_master graph_fpga_system.avs_filter14_cra
+2019.03.12.11:16:40 Info: set_connection_parameter_value avs_filter14_cra_cra_ring.cra_master/graph_fpga_system.avs_filter14_cra baseAddress 0x0
+2019.03.12.11:16:40 Info: add_instance avs_filter15_cra_cra_ring cra_ring_node 
+2019.03.12.11:16:40 Info: set_instance_parameter_value avs_filter15_cra_cra_ring DATA_W 64
+2019.03.12.11:16:40 Info: set_instance_parameter_value avs_filter15_cra_cra_ring RING_ADDR_W 5
+2019.03.12.11:16:40 Info: set_instance_parameter_value avs_filter15_cra_cra_ring CRA_ADDR_W 4
+2019.03.12.11:16:40 Info: set_instance_parameter_value avs_filter15_cra_cra_ring ID_W 5
+2019.03.12.11:16:40 Info: set_instance_parameter_value avs_filter15_cra_cra_ring ID 7
+2019.03.12.11:16:40 Info: add_connection acl_iface.kernel_clk avs_filter15_cra_cra_ring.clock
+2019.03.12.11:16:40 Info: add_connection acl_iface.kernel_reset avs_filter15_cra_cra_ring.reset
+2019.03.12.11:16:40 Info: add_connection avs_filter14_cra_cra_ring.ring_out avs_filter15_cra_cra_ring.ring_in
+2019.03.12.11:16:40 Info: add_connection avs_filter15_cra_cra_ring.cra_master graph_fpga_system.avs_filter15_cra
+2019.03.12.11:16:40 Info: set_connection_parameter_value avs_filter15_cra_cra_ring.cra_master/graph_fpga_system.avs_filter15_cra baseAddress 0x0
+2019.03.12.11:16:40 Info: add_instance avs_filter2_cra_cra_ring cra_ring_node 
+2019.03.12.11:16:40 Info: set_instance_parameter_value avs_filter2_cra_cra_ring DATA_W 64
+2019.03.12.11:16:40 Info: set_instance_parameter_value avs_filter2_cra_cra_ring RING_ADDR_W 5
+2019.03.12.11:16:40 Info: set_instance_parameter_value avs_filter2_cra_cra_ring CRA_ADDR_W 4
+2019.03.12.11:16:40 Info: set_instance_parameter_value avs_filter2_cra_cra_ring ID_W 5
+2019.03.12.11:16:40 Info: set_instance_parameter_value avs_filter2_cra_cra_ring ID 8
+2019.03.12.11:16:40 Info: add_connection acl_iface.kernel_clk avs_filter2_cra_cra_ring.clock
+2019.03.12.11:16:40 Info: add_connection acl_iface.kernel_reset avs_filter2_cra_cra_ring.reset
+2019.03.12.11:16:40 Info: add_connection avs_filter15_cra_cra_ring.ring_out avs_filter2_cra_cra_ring.ring_in
+2019.03.12.11:16:40 Info: add_connection avs_filter2_cra_cra_ring.cra_master graph_fpga_system.avs_filter2_cra
+2019.03.12.11:16:40 Info: set_connection_parameter_value avs_filter2_cra_cra_ring.cra_master/graph_fpga_system.avs_filter2_cra baseAddress 0x0
+2019.03.12.11:16:40 Info: add_instance avs_filter3_cra_cra_ring cra_ring_node 
+2019.03.12.11:16:40 Info: set_instance_parameter_value avs_filter3_cra_cra_ring DATA_W 64
+2019.03.12.11:16:40 Info: set_instance_parameter_value avs_filter3_cra_cra_ring RING_ADDR_W 5
+2019.03.12.11:16:40 Info: set_instance_parameter_value avs_filter3_cra_cra_ring CRA_ADDR_W 4
+2019.03.12.11:16:40 Info: set_instance_parameter_value avs_filter3_cra_cra_ring ID_W 5
+2019.03.12.11:16:40 Info: set_instance_parameter_value avs_filter3_cra_cra_ring ID 9
+2019.03.12.11:16:40 Info: add_connection acl_iface.kernel_clk avs_filter3_cra_cra_ring.clock
+2019.03.12.11:16:40 Info: add_connection acl_iface.kernel_reset avs_filter3_cra_cra_ring.reset
+2019.03.12.11:16:40 Info: add_connection avs_filter2_cra_cra_ring.ring_out avs_filter3_cra_cra_ring.ring_in
+2019.03.12.11:16:40 Info: add_connection avs_filter3_cra_cra_ring.cra_master graph_fpga_system.avs_filter3_cra
+2019.03.12.11:16:40 Info: set_connection_parameter_value avs_filter3_cra_cra_ring.cra_master/graph_fpga_system.avs_filter3_cra baseAddress 0x0
+2019.03.12.11:16:40 Info: add_instance avs_filter4_cra_cra_ring cra_ring_node 
+2019.03.12.11:16:40 Info: set_instance_parameter_value avs_filter4_cra_cra_ring DATA_W 64
+2019.03.12.11:16:40 Info: set_instance_parameter_value avs_filter4_cra_cra_ring RING_ADDR_W 5
+2019.03.12.11:16:40 Info: set_instance_parameter_value avs_filter4_cra_cra_ring CRA_ADDR_W 4
+2019.03.12.11:16:40 Info: set_instance_parameter_value avs_filter4_cra_cra_ring ID_W 5
+2019.03.12.11:16:40 Info: set_instance_parameter_value avs_filter4_cra_cra_ring ID 10
+2019.03.12.11:16:40 Info: add_connection acl_iface.kernel_clk avs_filter4_cra_cra_ring.clock
+2019.03.12.11:16:40 Info: add_connection acl_iface.kernel_reset avs_filter4_cra_cra_ring.reset
+2019.03.12.11:16:40 Info: add_connection avs_filter3_cra_cra_ring.ring_out avs_filter4_cra_cra_ring.ring_in
+2019.03.12.11:16:40 Info: add_connection avs_filter4_cra_cra_ring.cra_master graph_fpga_system.avs_filter4_cra
+2019.03.12.11:16:40 Info: set_connection_parameter_value avs_filter4_cra_cra_ring.cra_master/graph_fpga_system.avs_filter4_cra baseAddress 0x0
+2019.03.12.11:16:40 Info: add_instance avs_filter5_cra_cra_ring cra_ring_node 
+2019.03.12.11:16:40 Info: set_instance_parameter_value avs_filter5_cra_cra_ring DATA_W 64
+2019.03.12.11:16:40 Info: set_instance_parameter_value avs_filter5_cra_cra_ring RING_ADDR_W 5
+2019.03.12.11:16:40 Info: set_instance_parameter_value avs_filter5_cra_cra_ring CRA_ADDR_W 4
+2019.03.12.11:16:40 Info: set_instance_parameter_value avs_filter5_cra_cra_ring ID_W 5
+2019.03.12.11:16:40 Info: set_instance_parameter_value avs_filter5_cra_cra_ring ID 11
+2019.03.12.11:16:40 Info: add_connection acl_iface.kernel_clk avs_filter5_cra_cra_ring.clock
+2019.03.12.11:16:40 Info: add_connection acl_iface.kernel_reset avs_filter5_cra_cra_ring.reset
+2019.03.12.11:16:40 Info: add_connection avs_filter4_cra_cra_ring.ring_out avs_filter5_cra_cra_ring.ring_in
+2019.03.12.11:16:40 Info: add_connection avs_filter5_cra_cra_ring.cra_master graph_fpga_system.avs_filter5_cra
+2019.03.12.11:16:40 Info: set_connection_parameter_value avs_filter5_cra_cra_ring.cra_master/graph_fpga_system.avs_filter5_cra baseAddress 0x0
+2019.03.12.11:16:40 Info: add_instance avs_filter6_cra_cra_ring cra_ring_node 
+2019.03.12.11:16:40 Info: set_instance_parameter_value avs_filter6_cra_cra_ring DATA_W 64
+2019.03.12.11:16:40 Info: set_instance_parameter_value avs_filter6_cra_cra_ring RING_ADDR_W 5
+2019.03.12.11:16:40 Info: set_instance_parameter_value avs_filter6_cra_cra_ring CRA_ADDR_W 4
+2019.03.12.11:16:40 Info: set_instance_parameter_value avs_filter6_cra_cra_ring ID_W 5
+2019.03.12.11:16:40 Info: set_instance_parameter_value avs_filter6_cra_cra_ring ID 12
+2019.03.12.11:16:40 Info: add_connection acl_iface.kernel_clk avs_filter6_cra_cra_ring.clock
+2019.03.12.11:16:40 Info: add_connection acl_iface.kernel_reset avs_filter6_cra_cra_ring.reset
+2019.03.12.11:16:40 Info: add_connection avs_filter5_cra_cra_ring.ring_out avs_filter6_cra_cra_ring.ring_in
+2019.03.12.11:16:40 Info: add_connection avs_filter6_cra_cra_ring.cra_master graph_fpga_system.avs_filter6_cra
+2019.03.12.11:16:40 Info: set_connection_parameter_value avs_filter6_cra_cra_ring.cra_master/graph_fpga_system.avs_filter6_cra baseAddress 0x0
+2019.03.12.11:16:40 Info: add_instance avs_filter7_cra_cra_ring cra_ring_node 
+2019.03.12.11:16:40 Info: set_instance_parameter_value avs_filter7_cra_cra_ring DATA_W 64
+2019.03.12.11:16:40 Info: set_instance_parameter_value avs_filter7_cra_cra_ring RING_ADDR_W 5
+2019.03.12.11:16:40 Info: set_instance_parameter_value avs_filter7_cra_cra_ring CRA_ADDR_W 4
+2019.03.12.11:16:40 Info: set_instance_parameter_value avs_filter7_cra_cra_ring ID_W 5
+2019.03.12.11:16:40 Info: set_instance_parameter_value avs_filter7_cra_cra_ring ID 13
+2019.03.12.11:16:40 Info: add_connection acl_iface.kernel_clk avs_filter7_cra_cra_ring.clock
+2019.03.12.11:16:40 Info: add_connection acl_iface.kernel_reset avs_filter7_cra_cra_ring.reset
+2019.03.12.11:16:40 Info: add_connection avs_filter6_cra_cra_ring.ring_out avs_filter7_cra_cra_ring.ring_in
+2019.03.12.11:16:40 Info: add_connection avs_filter7_cra_cra_ring.cra_master graph_fpga_system.avs_filter7_cra
+2019.03.12.11:16:40 Info: set_connection_parameter_value avs_filter7_cra_cra_ring.cra_master/graph_fpga_system.avs_filter7_cra baseAddress 0x0
+2019.03.12.11:16:40 Info: add_instance avs_filter8_cra_cra_ring cra_ring_node 
+2019.03.12.11:16:40 Info: set_instance_parameter_value avs_filter8_cra_cra_ring DATA_W 64
+2019.03.12.11:16:40 Info: set_instance_parameter_value avs_filter8_cra_cra_ring RING_ADDR_W 5
+2019.03.12.11:16:40 Info: set_instance_parameter_value avs_filter8_cra_cra_ring CRA_ADDR_W 4
+2019.03.12.11:16:40 Info: set_instance_parameter_value avs_filter8_cra_cra_ring ID_W 5
+2019.03.12.11:16:40 Info: set_instance_parameter_value avs_filter8_cra_cra_ring ID 14
+2019.03.12.11:16:40 Info: add_connection acl_iface.kernel_clk avs_filter8_cra_cra_ring.clock
+2019.03.12.11:16:40 Info: add_connection acl_iface.kernel_reset avs_filter8_cra_cra_ring.reset
+2019.03.12.11:16:40 Info: add_connection avs_filter7_cra_cra_ring.ring_out avs_filter8_cra_cra_ring.ring_in
+2019.03.12.11:16:40 Info: add_connection avs_filter8_cra_cra_ring.cra_master graph_fpga_system.avs_filter8_cra
+2019.03.12.11:16:40 Info: set_connection_parameter_value avs_filter8_cra_cra_ring.cra_master/graph_fpga_system.avs_filter8_cra baseAddress 0x0
+2019.03.12.11:16:40 Info: add_instance avs_filter9_cra_cra_ring cra_ring_node 
+2019.03.12.11:16:40 Info: set_instance_parameter_value avs_filter9_cra_cra_ring DATA_W 64
+2019.03.12.11:16:40 Info: set_instance_parameter_value avs_filter9_cra_cra_ring RING_ADDR_W 5
+2019.03.12.11:16:40 Info: set_instance_parameter_value avs_filter9_cra_cra_ring CRA_ADDR_W 4
+2019.03.12.11:16:40 Info: set_instance_parameter_value avs_filter9_cra_cra_ring ID_W 5
+2019.03.12.11:16:40 Info: set_instance_parameter_value avs_filter9_cra_cra_ring ID 15
+2019.03.12.11:16:40 Info: add_connection acl_iface.kernel_clk avs_filter9_cra_cra_ring.clock
+2019.03.12.11:16:40 Info: add_connection acl_iface.kernel_reset avs_filter9_cra_cra_ring.reset
+2019.03.12.11:16:40 Info: add_connection avs_filter8_cra_cra_ring.ring_out avs_filter9_cra_cra_ring.ring_in
+2019.03.12.11:16:40 Info: add_connection avs_filter9_cra_cra_ring.cra_master graph_fpga_system.avs_filter9_cra
+2019.03.12.11:16:40 Info: set_connection_parameter_value avs_filter9_cra_cra_ring.cra_master/graph_fpga_system.avs_filter9_cra baseAddress 0x0
+2019.03.12.11:16:40 Info: add_instance avs_gather_cra_cra_ring cra_ring_node 
+2019.03.12.11:16:40 Info: set_instance_parameter_value avs_gather_cra_cra_ring DATA_W 64
+2019.03.12.11:16:40 Info: set_instance_parameter_value avs_gather_cra_cra_ring RING_ADDR_W 5
+2019.03.12.11:16:40 Info: set_instance_parameter_value avs_gather_cra_cra_ring CRA_ADDR_W 4
+2019.03.12.11:16:40 Info: set_instance_parameter_value avs_gather_cra_cra_ring ID_W 5
+2019.03.12.11:16:40 Info: set_instance_parameter_value avs_gather_cra_cra_ring ID 16
+2019.03.12.11:16:40 Info: add_connection acl_iface.kernel_clk avs_gather_cra_cra_ring.clock
+2019.03.12.11:16:40 Info: add_connection acl_iface.kernel_reset avs_gather_cra_cra_ring.reset
+2019.03.12.11:16:40 Info: add_connection avs_filter9_cra_cra_ring.ring_out avs_gather_cra_cra_ring.ring_in
+2019.03.12.11:16:40 Info: add_connection avs_gather_cra_cra_ring.cra_master graph_fpga_system.avs_gather_cra
+2019.03.12.11:16:40 Info: set_connection_parameter_value avs_gather_cra_cra_ring.cra_master/graph_fpga_system.avs_gather_cra baseAddress 0x0
+2019.03.12.11:16:40 Info: add_instance avs_processEdges_cra_cra_ring cra_ring_node 
+2019.03.12.11:16:40 Info: set_instance_parameter_value avs_processEdges_cra_cra_ring DATA_W 64
+2019.03.12.11:16:40 Info: set_instance_parameter_value avs_processEdges_cra_cra_ring RING_ADDR_W 5
+2019.03.12.11:16:40 Info: set_instance_parameter_value avs_processEdges_cra_cra_ring CRA_ADDR_W 4
+2019.03.12.11:16:40 Info: set_instance_parameter_value avs_processEdges_cra_cra_ring ID_W 5
+2019.03.12.11:16:40 Info: set_instance_parameter_value avs_processEdges_cra_cra_ring ID 17
+2019.03.12.11:16:40 Info: add_connection acl_iface.kernel_clk avs_processEdges_cra_cra_ring.clock
+2019.03.12.11:16:40 Info: add_connection acl_iface.kernel_reset avs_processEdges_cra_cra_ring.reset
+2019.03.12.11:16:40 Info: add_connection avs_gather_cra_cra_ring.ring_out avs_processEdges_cra_cra_ring.ring_in
+2019.03.12.11:16:40 Info: add_connection avs_processEdges_cra_cra_ring.cra_master graph_fpga_system.avs_processEdges_cra
+2019.03.12.11:16:40 Info: set_connection_parameter_value avs_processEdges_cra_cra_ring.cra_master/graph_fpga_system.avs_processEdges_cra baseAddress 0x0
+2019.03.12.11:16:40 Info: add_instance avs_readEdges_cra_cra_ring cra_ring_node 
+2019.03.12.11:16:40 Info: set_instance_parameter_value avs_readEdges_cra_cra_ring DATA_W 64
+2019.03.12.11:16:40 Info: set_instance_parameter_value avs_readEdges_cra_cra_ring RING_ADDR_W 5
+2019.03.12.11:16:40 Info: set_instance_parameter_value avs_readEdges_cra_cra_ring CRA_ADDR_W 5
+2019.03.12.11:16:40 Info: set_instance_parameter_value avs_readEdges_cra_cra_ring ID_W 5
+2019.03.12.11:16:40 Info: set_instance_parameter_value avs_readEdges_cra_cra_ring ID 18
+2019.03.12.11:16:40 Info: add_connection acl_iface.kernel_clk avs_readEdges_cra_cra_ring.clock
+2019.03.12.11:16:40 Info: add_connection acl_iface.kernel_reset avs_readEdges_cra_cra_ring.reset
+2019.03.12.11:16:40 Info: add_connection avs_processEdges_cra_cra_ring.ring_out avs_readEdges_cra_cra_ring.ring_in
+2019.03.12.11:16:40 Info: add_connection avs_readEdges_cra_cra_ring.cra_master graph_fpga_system.avs_readEdges_cra
+2019.03.12.11:16:40 Info: set_connection_parameter_value avs_readEdges_cra_cra_ring.cra_master/graph_fpga_system.avs_readEdges_cra baseAddress 0x0
+2019.03.12.11:16:40 Info: add_instance avs_vertexApply_cra_cra_ring cra_ring_node 
+2019.03.12.11:16:40 Info: set_instance_parameter_value avs_vertexApply_cra_cra_ring DATA_W 64
+2019.03.12.11:16:40 Info: set_instance_parameter_value avs_vertexApply_cra_cra_ring RING_ADDR_W 5
+2019.03.12.11:16:40 Info: set_instance_parameter_value avs_vertexApply_cra_cra_ring CRA_ADDR_W 5
+2019.03.12.11:16:40 Info: set_instance_parameter_value avs_vertexApply_cra_cra_ring ID_W 5
+2019.03.12.11:16:40 Info: set_instance_parameter_value avs_vertexApply_cra_cra_ring ID 19
+2019.03.12.11:16:40 Info: add_connection acl_iface.kernel_clk avs_vertexApply_cra_cra_ring.clock
+2019.03.12.11:16:40 Info: add_connection acl_iface.kernel_reset avs_vertexApply_cra_cra_ring.reset
+2019.03.12.11:16:40 Info: add_connection avs_readEdges_cra_cra_ring.ring_out avs_vertexApply_cra_cra_ring.ring_in
+2019.03.12.11:16:40 Info: add_connection avs_vertexApply_cra_cra_ring.cra_master graph_fpga_system.avs_vertexApply_cra
+2019.03.12.11:16:40 Info: set_connection_parameter_value avs_vertexApply_cra_cra_ring.cra_master/graph_fpga_system.avs_vertexApply_cra baseAddress 0x0
+2019.03.12.11:16:40 Info: add_connection avs_vertexApply_cra_cra_ring.ring_out cra_root.ring_in
+2019.03.12.11:16:40 Info: save_system 
+2019.03.12.11:16:41 Info: 
+********************************************************************************************************************
+
+Use qsys-generate for a simpler command-line interface for generating IP.
+
+Run ip-generate with switch --remove-qsys-generate-warning to prevent this notice from appearing in subsequent runs.
+
+********************************************************************************************************************
+2019.03.12.11:16:46 Progress: Loading graph_fpga/system.qsys
+2019.03.12.11:16:46 Progress: Reading input file
+2019.03.12.11:16:47 Progress: Adding acl_iface [acl_iface_system 1.0]
+2019.03.12.11:16:47 Progress: Reading input file
+2019.03.12.11:16:47 Progress: Adding global_reset_in [altera_reset_bridge 13.1]
+2019.03.12.11:16:48 Warning: global_reset_in: Used altera_reset_bridge 16.1 (instead of 13.1)
+2019.03.12.11:16:48 Progress: Parameterizing module global_reset_in
+2019.03.12.11:16:48 Progress: Adding pipe_stage_ddr3b_dimm [altera_avalon_mm_bridge 13.1]
+2019.03.12.11:16:49 Warning: pipe_stage_ddr3b_dimm: Used altera_avalon_mm_bridge 16.1 (instead of 13.1)
+2019.03.12.11:16:49 Progress: Parameterizing module pipe_stage_ddr3b_dimm
+2019.03.12.11:16:49 Progress: Adding pcie [altera_pcie_sv_hip_avmm 13.1]
+2019.03.12.11:16:49 Warning: pcie: Used altera_pcie_sv_hip_avmm 16.1 (instead of 13.1)
+2019.03.12.11:16:49 Progress: Parameterizing module pcie
+2019.03.12.11:16:49 Progress: Adding ddr3a [altera_mem_if_ddr3_emif 13.1]
+2019.03.12.11:16:49 Warning: ddr3a: Used altera_mem_if_ddr3_emif 16.1 (instead of 13.1)
+2019.03.12.11:16:49 Progress: Parameterizing module ddr3a
+2019.03.12.11:16:49 Progress: Adding ddr3b [altera_mem_if_ddr3_emif 13.1]
+2019.03.12.11:16:49 Warning: ddr3b: Used altera_mem_if_ddr3_emif 16.1 (instead of 13.1)
+2019.03.12.11:16:49 Progress: Parameterizing module ddr3b
+2019.03.12.11:16:49 Progress: Adding pipe_stage_ddr3a_dimm [altera_avalon_mm_bridge 13.1]
+2019.03.12.11:16:49 Warning: pipe_stage_ddr3a_dimm: Used altera_avalon_mm_bridge 16.1 (instead of 13.1)
+2019.03.12.11:16:49 Progress: Parameterizing module pipe_stage_ddr3a_dimm
+2019.03.12.11:16:49 Progress: Adding config_clk [altera_clock_bridge 13.1]
+2019.03.12.11:16:49 Warning: config_clk: Used altera_clock_bridge 16.1 (instead of 13.1)
+2019.03.12.11:16:49 Progress: Parameterizing module config_clk
+2019.03.12.11:16:49 Progress: Adding clock_cross_dma_to_pcie [altera_avalon_mm_clock_crossing_bridge 13.1]
+2019.03.12.11:16:49 Warning: clock_cross_dma_to_pcie: Used altera_avalon_mm_clock_crossing_bridge 16.1 (instead of 13.1)
+2019.03.12.11:16:49 Progress: Parameterizing module clock_cross_dma_to_pcie
+2019.03.12.11:16:49 Progress: Adding temperature_pll [altera_pll 13.1]
+2019.03.12.11:16:50 Warning: temperature_pll: Used altera_pll 16.1 (instead of 13.1)
+2019.03.12.11:16:50 Progress: Parameterizing module temperature_pll
+2019.03.12.11:16:50 Progress: Adding temperature_0 [temperature 10.0]
+2019.03.12.11:16:50 Progress: Parameterizing module temperature_0
+2019.03.12.11:16:50 Progress: Adding acl_kernel_clk [acl_kernel_clk 1.0]
+2019.03.12.11:16:50 Progress: Reading input file
+2019.03.12.11:16:50 Progress: Adding kernel_clk [clock_source 13.1]
+2019.03.12.11:16:50 Warning: kernel_clk: Used clock_source 16.1 (instead of 13.1)
+2019.03.12.11:16:50 Progress: Parameterizing module kernel_clk
+2019.03.12.11:16:50 Progress: Adding kernel_pll [altera_pll 13.1]
+2019.03.12.11:16:50 Warning: kernel_pll: Used altera_pll 16.1 (instead of 13.1)
+2019.03.12.11:16:50 Progress: Parameterizing module kernel_pll
+2019.03.12.11:16:50 Progress: Adding pll_reconfig_0 [altera_pll_reconfig 13.1]
+2019.03.12.11:16:50 Warning: pll_reconfig_0: Used altera_pll_reconfig 16.1 (instead of 13.1)
+2019.03.12.11:16:50 Progress: Parameterizing module pll_reconfig_0
+2019.03.12.11:16:50 Progress: Adding counter [acl_timer 10.0]
+2019.03.12.11:16:50 Progress: Parameterizing module counter
+2019.03.12.11:16:50 Progress: Adding global_routing_kernel_clk [global_routing_clk 10.0]
+2019.03.12.11:16:50 Progress: Parameterizing module global_routing_kernel_clk
+2019.03.12.11:16:50 Progress: Adding global_routing_kernel_clk2x [global_routing_clk 10.0]
+2019.03.12.11:16:50 Progress: Parameterizing module global_routing_kernel_clk2x
+2019.03.12.11:16:50 Progress: Adding kernel_pll_refclk [altera_clock_bridge 13.1]
+2019.03.12.11:16:50 Warning: kernel_pll_refclk: Used altera_clock_bridge 16.1 (instead of 13.1)
+2019.03.12.11:16:50 Progress: Parameterizing module kernel_pll_refclk
+2019.03.12.11:16:50 Progress: Adding ctrl [altera_avalon_mm_bridge 13.1]
+2019.03.12.11:16:50 Warning: ctrl: Used altera_avalon_mm_bridge 16.1 (instead of 13.1)
+2019.03.12.11:16:50 Progress: Parameterizing module ctrl
+2019.03.12.11:16:50 Progress: Adding pll_sw_reset [sw_reset 10.0]
+2019.03.12.11:16:50 Progress: Parameterizing module pll_sw_reset
+2019.03.12.11:16:50 Progress: Adding pll_lock_avs_0 [pll_lock_avs 10.0]
+2019.03.12.11:16:50 Progress: Parameterizing module pll_lock_avs_0
+2019.03.12.11:16:50 Progress: Adding clk [clock_source 13.1]
+2019.03.12.11:16:50 Warning: clk: Used clock_source 16.1 (instead of 13.1)
+2019.03.12.11:16:50 Progress: Parameterizing module clk
+2019.03.12.11:16:50 Progress: Adding version_id_0 [version_id 10.0]
+2019.03.12.11:16:50 Progress: Parameterizing module version_id_0
+2019.03.12.11:16:50 Progress: Adding pll_rom [altera_avalon_onchip_memory2 13.1]
+2019.03.12.11:16:50 Warning: pll_rom: Used altera_avalon_onchip_memory2 16.1 (instead of 13.1)
+2019.03.12.11:16:50 Progress: Parameterizing module pll_rom
+2019.03.12.11:16:50 Progress: Building connections
+2019.03.12.11:16:50 Progress: Parameterizing connections
+2019.03.12.11:16:50 Progress: Validating
+2019.03.12.11:16:52 Progress: Done reading input file
+2019.03.12.11:16:52 Progress: Parameterizing module acl_kernel_clk
+2019.03.12.11:16:52 Progress: Adding kernel_interface [acl_kernel_interface 1.0]
+2019.03.12.11:16:52 Progress: Reading input file
+2019.03.12.11:16:52 Progress: Adding kernel_cra [altera_avalon_mm_bridge 13.1]
+2019.03.12.11:16:52 Warning: kernel_cra: Used altera_avalon_mm_bridge 16.1 (instead of 13.1)
+2019.03.12.11:16:52 Progress: Parameterizing module kernel_cra
+2019.03.12.11:16:52 Progress: Adding address_span_extender_0 [altera_address_span_extender 1.2]
+2019.03.12.11:16:52 Warning: address_span_extender_0: Used altera_address_span_extender 16.1 (instead of 1.2)
+2019.03.12.11:16:52 Progress: Parameterizing module address_span_extender_0
+2019.03.12.11:16:52 Info: address_span_extender_0: Upgrade from altera_address_span_extender v1.2. Removing parameter AUTO_CLOCK_CLOCK_RATE
+2019.03.12.11:16:52 Info: address_span_extender_0: Upgrade from altera_address_span_extender v1.2. Removing parameter AUTO_DEVICE_FAMILY
+2019.03.12.11:16:52 Info: address_span_extender_0: Upgrade from altera_address_span_extender v1.2 TERMINATE_SLAVE_PORT(false) -> ENABLE_SLAVE_PORT(true).
+2019.03.12.11:16:52 Progress: Adding sw_reset [sw_reset 10.0]
+2019.03.12.11:16:52 Progress: Parameterizing module sw_reset
+2019.03.12.11:16:52 Progress: Adding kernel_cntrl [altera_avalon_mm_bridge 13.1]
+2019.03.12.11:16:52 Warning: kernel_cntrl: Used altera_avalon_mm_bridge 16.1 (instead of 13.1)
+2019.03.12.11:16:52 Progress: Parameterizing module kernel_cntrl
+2019.03.12.11:16:52 Progress: Adding mem_org_mode [mem_org_mode 10.0]
+2019.03.12.11:16:52 Progress: Parameterizing module mem_org_mode
+2019.03.12.11:16:52 Progress: Adding clk_reset [clock_source 13.1]
+2019.03.12.11:16:52 Warning: clk_reset: Used clock_source 16.1 (instead of 13.1)
+2019.03.12.11:16:52 Progress: Parameterizing module clk_reset
+2019.03.12.11:16:52 Progress: Adding irq_bridge_0 [altera_irq_bridge 13.1]
+2019.03.12.11:16:52 Warning: irq_bridge_0: Used altera_irq_bridge 16.1 (instead of 13.1)
+2019.03.12.11:16:52 Progress: Parameterizing module irq_bridge_0
+2019.03.12.11:16:52 Progress: Adding sw_reset_in [altera_reset_bridge 13.1]
+2019.03.12.11:16:52 Warning: sw_reset_in: Used altera_reset_bridge 16.1 (instead of 13.1)
+2019.03.12.11:16:52 Progress: Parameterizing module sw_reset_in
+2019.03.12.11:16:52 Progress: Adding version_id_0 [version_id 10.0]
+2019.03.12.11:16:52 Progress: Parameterizing module version_id_0
+2019.03.12.11:16:52 Progress: Adding reset_controller_sw [altera_reset_controller 13.1]
+2019.03.12.11:16:52 Warning: reset_controller_sw: Used altera_reset_controller 16.1 (instead of 13.1)
+2019.03.12.11:16:52 Progress: Parameterizing module reset_controller_sw
+2019.03.12.11:16:52 Progress: Adding kernel_clk [altera_clock_bridge 13.1]
+2019.03.12.11:16:52 Warning: kernel_clk: Used altera_clock_bridge 16.1 (instead of 13.1)
+2019.03.12.11:16:52 Progress: Parameterizing module kernel_clk
+2019.03.12.11:16:52 Progress: Adding reset_bridge_0 [altera_reset_bridge 13.1]
+2019.03.12.11:16:52 Warning: reset_bridge_0: Used altera_reset_bridge 16.1 (instead of 13.1)
+2019.03.12.11:16:52 Progress: Parameterizing module reset_bridge_0
+2019.03.12.11:16:52 Progress: Adding reset_bridge_1 [altera_reset_bridge 13.1]
+2019.03.12.11:16:52 Warning: reset_bridge_1: Used altera_reset_bridge 16.1 (instead of 13.1)
+2019.03.12.11:16:52 Progress: Parameterizing module reset_bridge_1
+2019.03.12.11:16:52 Progress: Adding sys_description_rom [altera_avalon_onchip_memory2 13.1]
+2019.03.12.11:16:52 Warning: sys_description_rom: Used altera_avalon_onchip_memory2 16.1 (instead of 13.1)
+2019.03.12.11:16:52 Progress: Parameterizing module sys_description_rom
+2019.03.12.11:16:52 Progress: Building connections
+2019.03.12.11:16:52 Progress: Parameterizing connections
+2019.03.12.11:16:52 Progress: Validating
+2019.03.12.11:16:52 Progress: Done reading input file
+2019.03.12.11:16:52 Progress: Parameterizing module kernel_interface
+2019.03.12.11:16:52 Progress: Adding dma_0 [acl_dma 1.0]
+2019.03.12.11:16:52 Progress: Reading input file
+2019.03.12.11:16:52 Progress: Adding clk [clock_source 13.0]
+2019.03.12.11:16:52 Warning: clk: Used clock_source 16.1 (instead of 13.0)
+2019.03.12.11:16:52 Progress: Parameterizing module clk
+2019.03.12.11:16:52 Progress: Adding pipe_stage_0 [altera_avalon_mm_bridge 13.0]
+2019.03.12.11:16:52 Warning: pipe_stage_0: Used altera_avalon_mm_bridge 16.1 (instead of 13.0)
+2019.03.12.11:16:52 Progress: Parameterizing module pipe_stage_0
+2019.03.12.11:16:52 Progress: Adding dma [acl_dma_core 1.0]
+2019.03.12.11:16:52 Progress: Reading input file
+2019.03.12.11:16:52 Progress: Adding modular_sgdma_dispatcher_0 [modular_sgdma_dispatcher 1.0]
+2019.03.12.11:16:53 Progress: Parameterizing module modular_sgdma_dispatcher_0
+2019.03.12.11:16:53 Progress: Adding dma_read_master [dma_read_master 1.0]
+2019.03.12.11:16:53 Progress: Parameterizing module dma_read_master
+2019.03.12.11:16:53 Progress: Adding dma_write_master [dma_write_master 1.0]
+2019.03.12.11:16:53 Progress: Parameterizing module dma_write_master
+2019.03.12.11:16:53 Progress: Adding pipe_stage_dma_read [altera_avalon_mm_bridge 12.1]
+2019.03.12.11:16:53 Warning: pipe_stage_dma_read: Used altera_avalon_mm_bridge 16.1 (instead of 12.1)
+2019.03.12.11:16:53 Progress: Parameterizing module pipe_stage_dma_read
+2019.03.12.11:16:53 Progress: Adding pipe_stage_dma_write [altera_avalon_mm_bridge 12.1]
+2019.03.12.11:16:53 Warning: pipe_stage_dma_write: Used altera_avalon_mm_bridge 16.1 (instead of 12.1)
+2019.03.12.11:16:53 Progress: Parameterizing module pipe_stage_dma_write
+2019.03.12.11:16:53 Progress: Adding dma_clk [clock_source 12.1]
+2019.03.12.11:16:53 Warning: dma_clk: Used clock_source 16.1 (instead of 12.1)
+2019.03.12.11:16:53 Progress: Parameterizing module dma_clk
+2019.03.12.11:16:53 Progress: Building connections
+2019.03.12.11:16:53 Progress: Parameterizing connections
+2019.03.12.11:16:53 Progress: Validating
+2019.03.12.11:16:53 Progress: Done reading input file
+2019.03.12.11:16:53 Progress: Parameterizing module dma
+2019.03.12.11:16:53 Progress: Adding address_span_extender_0 [altera_address_span_extender 1.2]
+2019.03.12.11:16:53 Warning: address_span_extender_0: Used altera_address_span_extender 16.1 (instead of 1.2)
+2019.03.12.11:16:53 Progress: Parameterizing module address_span_extender_0
+2019.03.12.11:16:53 Info: address_span_extender_0: Upgrade from altera_address_span_extender v1.2. Removing parameter AUTO_CLOCK_CLOCK_RATE
+2019.03.12.11:16:53 Info: address_span_extender_0: Upgrade from altera_address_span_extender v1.2. Removing parameter AUTO_DEVICE_FAMILY
+2019.03.12.11:16:53 Info: address_span_extender_0: Upgrade from altera_address_span_extender v1.2 TERMINATE_SLAVE_PORT(false) -> ENABLE_SLAVE_PORT(true).
+2019.03.12.11:16:53 Progress: Adding pipe_stage_m [altera_avalon_mm_bridge 13.0]
+2019.03.12.11:16:53 Warning: pipe_stage_m: Used altera_avalon_mm_bridge 16.1 (instead of 13.0)
+2019.03.12.11:16:53 Progress: Parameterizing module pipe_stage_m
+2019.03.12.11:16:53 Progress: Adding csr [altera_avalon_mm_bridge 13.0]
+2019.03.12.11:16:53 Warning: csr: Used altera_avalon_mm_bridge 16.1 (instead of 13.0)
+2019.03.12.11:16:53 Progress: Parameterizing module csr
+2019.03.12.11:16:53 Progress: Building connections
+2019.03.12.11:16:53 Progress: Parameterizing connections
+2019.03.12.11:16:53 Progress: Validating
+2019.03.12.11:16:54 Progress: Done reading input file
+2019.03.12.11:16:54 Progress: Parameterizing module dma_0
+2019.03.12.11:16:54 Progress: Adding pipe_stage_host_ctrl [altera_avalon_mm_bridge 13.1]
+2019.03.12.11:16:54 Warning: pipe_stage_host_ctrl: Used altera_avalon_mm_bridge 16.1 (instead of 13.1)
+2019.03.12.11:16:54 Progress: Parameterizing module pipe_stage_host_ctrl
+2019.03.12.11:16:54 Progress: Adding clock_cross_kernel_mem_0 [altera_avalon_mm_clock_crossing_bridge 13.1]
+2019.03.12.11:16:54 Warning: clock_cross_kernel_mem_0: Used altera_avalon_mm_clock_crossing_bridge 16.1 (instead of 13.1)
+2019.03.12.11:16:54 Progress: Parameterizing module clock_cross_kernel_mem_0
+2019.03.12.11:16:54 Progress: Adding clock_cross_kernel_mem_1 [altera_avalon_mm_clock_crossing_bridge 13.1]
+2019.03.12.11:16:54 Warning: clock_cross_kernel_mem_1: Used altera_avalon_mm_clock_crossing_bridge 16.1 (instead of 13.1)
+2019.03.12.11:16:54 Progress: Parameterizing module clock_cross_kernel_mem_1
+2019.03.12.11:16:54 Progress: Adding pipe_stage_ddr3a_iface [altera_avalon_mm_bridge 13.1]
+2019.03.12.11:16:54 Warning: pipe_stage_ddr3a_iface: Used altera_avalon_mm_bridge 16.1 (instead of 13.1)
+2019.03.12.11:16:54 Progress: Parameterizing module pipe_stage_ddr3a_iface
+2019.03.12.11:16:54 Progress: Adding em_pc_0 [altera_avalon_em_pc 13.1]
+2019.03.12.11:16:54 Warning: em_pc_0: Used altera_avalon_em_pc 16.1 (instead of 13.1)
+2019.03.12.11:16:54 Progress: Parameterizing module em_pc_0
+2019.03.12.11:16:54 Progress: Adding em_pc_1 [altera_avalon_em_pc 13.1]
+2019.03.12.11:16:54 Warning: em_pc_1: Used altera_avalon_em_pc 16.1 (instead of 13.1)
+2019.03.12.11:16:54 Progress: Parameterizing module em_pc_1
+2019.03.12.11:16:54 Progress: Adding clock_cross_dma_to_ddr3b [altera_avalon_mm_clock_crossing_bridge 13.1]
+2019.03.12.11:16:54 Warning: clock_cross_dma_to_ddr3b: Used altera_avalon_mm_clock_crossing_bridge 16.1 (instead of 13.1)
+2019.03.12.11:16:54 Progress: Parameterizing module clock_cross_dma_to_ddr3b
+2019.03.12.11:16:54 Progress: Adding kernel_clk [clock_source 13.1]
+2019.03.12.11:16:54 Warning: kernel_clk: Used clock_source 16.1 (instead of 13.1)
+2019.03.12.11:16:54 Progress: Parameterizing module kernel_clk
+2019.03.12.11:16:54 Progress: Adding acl_memory_bank_divider_0 [acl_memory_bank_divider 1.0]
+2019.03.12.11:16:54 Warning: acl_memory_bank_divider: add_instance: Component clock_source version 12.1 is not installed - loaded latest installed version 16.1 instead.  Please check for parameter mismatches 
+2019.03.12.11:16:54 Warning: acl_memory_bank_divider: add_instance: Component clock_source version 12.1 is not installed - loaded latest installed version 16.1 instead.  Please check for parameter mismatches 
+2019.03.12.11:16:54 Progress: Parameterizing module acl_memory_bank_divider_0
+2019.03.12.11:16:54 Progress: Adding por_reset_counter [sw_reset 10.0]
+2019.03.12.11:16:54 Progress: Parameterizing module por_reset_counter
+2019.03.12.11:16:54 Progress: Adding reset_controller_pcie [altera_reset_controller 13.1]
+2019.03.12.11:16:54 Warning: reset_controller_pcie: Used altera_reset_controller 16.1 (instead of 13.1)
+2019.03.12.11:16:54 Progress: Parameterizing module reset_controller_pcie
+2019.03.12.11:16:54 Progress: Adding reset_controller_ddr3b [altera_reset_controller 13.1]
+2019.03.12.11:16:54 Warning: reset_controller_ddr3b: Used altera_reset_controller 16.1 (instead of 13.1)
+2019.03.12.11:16:54 Progress: Parameterizing module reset_controller_ddr3b
+2019.03.12.11:16:54 Progress: Adding reset_controller_ddr3a [altera_reset_controller 13.1]
+2019.03.12.11:16:54 Warning: reset_controller_ddr3a: Used altera_reset_controller 16.1 (instead of 13.1)
+2019.03.12.11:16:54 Progress: Parameterizing module reset_controller_ddr3a
+2019.03.12.11:16:54 Progress: Adding npor_export [altera_reset_bridge 13.1]
+2019.03.12.11:16:54 Warning: npor_export: Used altera_reset_bridge 16.1 (instead of 13.1)
+2019.03.12.11:16:54 Progress: Parameterizing module npor_export
+2019.03.12.11:16:54 Progress: Adding global_reset [altera_reset_bridge 13.1]
+2019.03.12.11:16:54 Warning: global_reset: Used altera_reset_bridge 16.1 (instead of 13.1)
+2019.03.12.11:16:54 Progress: Parameterizing module global_reset
+2019.03.12.11:16:54 Progress: Adding reset_controller_global [altera_reset_controller 13.1]
+2019.03.12.11:16:54 Warning: reset_controller_global: Used altera_reset_controller 16.1 (instead of 13.1)
+2019.03.12.11:16:54 Progress: Parameterizing module reset_controller_global
+2019.03.12.11:16:54 Progress: Adding uniphy_status_0 [uniphy_status 10.0]
+2019.03.12.11:16:54 Progress: Parameterizing module uniphy_status_0
+2019.03.12.11:16:54 Progress: Adding version_id_0 [version_id 10.0]
+2019.03.12.11:16:54 Progress: Parameterizing module version_id_0
+2019.03.12.11:16:54 Progress: Adding pipe_stage_ddr3b_iface [altera_avalon_mm_bridge 13.1]
+2019.03.12.11:16:54 Warning: pipe_stage_ddr3b_iface: Used altera_avalon_mm_bridge 16.1 (instead of 13.1)
+2019.03.12.11:16:54 Progress: Parameterizing module pipe_stage_ddr3b_iface
+2019.03.12.11:16:54 Progress: Building connections
+2019.03.12.11:16:54 Progress: Parameterizing connections
+2019.03.12.11:16:54 Progress: Validating
+2019.03.12.11:17:00 Progress: Done reading input file
+2019.03.12.11:17:02 Progress: Parameterizing module acl_iface
+2019.03.12.11:17:02 Progress: Adding avs_filter10_cra_cra_ring [cra_ring_node 1.0]
+2019.03.12.11:17:02 Progress: Parameterizing module avs_filter10_cra_cra_ring
+2019.03.12.11:17:02 Progress: Adding avs_filter11_cra_cra_ring [cra_ring_node 1.0]
+2019.03.12.11:17:02 Progress: Parameterizing module avs_filter11_cra_cra_ring
+2019.03.12.11:17:02 Progress: Adding avs_filter12_cra_cra_ring [cra_ring_node 1.0]
+2019.03.12.11:17:02 Progress: Parameterizing module avs_filter12_cra_cra_ring
+2019.03.12.11:17:02 Progress: Adding avs_filter13_cra_cra_ring [cra_ring_node 1.0]
+2019.03.12.11:17:02 Progress: Parameterizing module avs_filter13_cra_cra_ring
+2019.03.12.11:17:02 Progress: Adding avs_filter14_cra_cra_ring [cra_ring_node 1.0]
+2019.03.12.11:17:02 Progress: Parameterizing module avs_filter14_cra_cra_ring
+2019.03.12.11:17:02 Progress: Adding avs_filter15_cra_cra_ring [cra_ring_node 1.0]
+2019.03.12.11:17:02 Progress: Parameterizing module avs_filter15_cra_cra_ring
+2019.03.12.11:17:02 Progress: Adding avs_filter1_cra_cra_ring [cra_ring_node 1.0]
+2019.03.12.11:17:02 Progress: Parameterizing module avs_filter1_cra_cra_ring
+2019.03.12.11:17:02 Progress: Adding avs_filter2_cra_cra_ring [cra_ring_node 1.0]
+2019.03.12.11:17:02 Progress: Parameterizing module avs_filter2_cra_cra_ring
+2019.03.12.11:17:02 Progress: Adding avs_filter3_cra_cra_ring [cra_ring_node 1.0]
+2019.03.12.11:17:02 Progress: Parameterizing module avs_filter3_cra_cra_ring
+2019.03.12.11:17:02 Progress: Adding avs_filter4_cra_cra_ring [cra_ring_node 1.0]
+2019.03.12.11:17:02 Progress: Parameterizing module avs_filter4_cra_cra_ring
+2019.03.12.11:17:02 Progress: Adding avs_filter5_cra_cra_ring [cra_ring_node 1.0]
+2019.03.12.11:17:02 Progress: Parameterizing module avs_filter5_cra_cra_ring
+2019.03.12.11:17:02 Progress: Adding avs_filter6_cra_cra_ring [cra_ring_node 1.0]
+2019.03.12.11:17:02 Progress: Parameterizing module avs_filter6_cra_cra_ring
+2019.03.12.11:17:02 Progress: Adding avs_filter7_cra_cra_ring [cra_ring_node 1.0]
+2019.03.12.11:17:02 Progress: Parameterizing module avs_filter7_cra_cra_ring
+2019.03.12.11:17:02 Progress: Adding avs_filter8_cra_cra_ring [cra_ring_node 1.0]
+2019.03.12.11:17:02 Progress: Parameterizing module avs_filter8_cra_cra_ring
+2019.03.12.11:17:02 Progress: Adding avs_filter9_cra_cra_ring [cra_ring_node 1.0]
+2019.03.12.11:17:02 Progress: Parameterizing module avs_filter9_cra_cra_ring
+2019.03.12.11:17:02 Progress: Adding avs_filter_cra_cra_ring [cra_ring_node 1.0]
+2019.03.12.11:17:02 Progress: Parameterizing module avs_filter_cra_cra_ring
+2019.03.12.11:17:02 Progress: Adding avs_gather_cra_cra_ring [cra_ring_node 1.0]
+2019.03.12.11:17:02 Progress: Parameterizing module avs_gather_cra_cra_ring
+2019.03.12.11:17:02 Progress: Adding avs_processEdges_cra_cra_ring [cra_ring_node 1.0]
+2019.03.12.11:17:02 Progress: Parameterizing module avs_processEdges_cra_cra_ring
+2019.03.12.11:17:02 Progress: Adding avs_readEdges_cra_cra_ring [cra_ring_node 1.0]
+2019.03.12.11:17:02 Progress: Parameterizing module avs_readEdges_cra_cra_ring
+2019.03.12.11:17:02 Progress: Adding avs_vertexApply_cra_cra_ring [cra_ring_node 1.0]
+2019.03.12.11:17:02 Progress: Parameterizing module avs_vertexApply_cra_cra_ring
+2019.03.12.11:17:02 Progress: Adding cra_root [cra_ring_root 1.0]
+2019.03.12.11:17:02 Progress: Parameterizing module cra_root
+2019.03.12.11:17:02 Progress: Adding global_reset [altera_reset_bridge 16.1]
+2019.03.12.11:17:02 Progress: Parameterizing module global_reset
+2019.03.12.11:17:02 Progress: Adding graph_fpga_system [graph_fpga_system 14.0]
+2019.03.12.11:17:02 Progress: Parameterizing module graph_fpga_system
+2019.03.12.11:17:02 Progress: Building connections
+2019.03.12.11:17:02 Progress: Parameterizing connections
+2019.03.12.11:17:02 Progress: Validating
+2019.03.12.11:17:03 Progress: Done reading input file
+2019.03.12.11:17:08 Info: system.acl_iface.pcie: CVP support for this design is enabled.
+2019.03.12.11:17:08 Info: system.acl_iface.pcie: The application clock frequency (pld_clk) is 250 Mhz
+2019.03.12.11:17:08 Info: system.acl_iface.pcie: Family: Stratix V
+2019.03.12.11:17:08 Info: system.acl_iface.pcie: 10 reconfiguration interfaces are required for connection to the external reconfiguration controller and the reconfig driver
+2019.03.12.11:17:08 Info: system.acl_iface.pcie: Hard Reset Controller enabled
+2019.03.12.11:17:08 Info: system.acl_iface.pcie: Credit allocation in the 16 KBytes receive buffer:
+2019.03.12.11:17:08 Info: system.acl_iface.pcie: Posted    : header=16  data=16
+2019.03.12.11:17:08 Info: system.acl_iface.pcie: Non posted: header=16  data=0
+2019.03.12.11:17:08 Info: system.acl_iface.pcie: Completion: header=195 data=781
+2019.03.12.11:17:08 Info: system.acl_iface.pcie: TXS ADDRESS WIDTH is 32
+2019.03.12.11:17:08 Warning: system.acl_iface.ddr3a: Timing closure may not be achievable at maximum frequency for 'Command Queue Look-Ahead Depth' value greater than 4.
+2019.03.12.11:17:08 Warning: system.acl_iface.ddr3a: 'Quick' simulation modes are NOT timing accurate. Some simulation memory models may issue warnings or errors
+2019.03.12.11:17:08 Warning: system.acl_iface.ddr3a.pll_bridge: pll_bridge.pll_sharing cannot be both connected and exported
+2019.03.12.11:17:08 Warning: system.acl_iface.ddr3b: Timing closure may not be achievable at maximum frequency for 'Command Queue Look-Ahead Depth' value greater than 4.
+2019.03.12.11:17:08 Warning: system.acl_iface.ddr3b: 'Quick' simulation modes are NOT timing accurate. Some simulation memory models may issue warnings or errors
+2019.03.12.11:17:08 Warning: system.acl_iface.ddr3b.pll_bridge: pll_bridge.pll_sharing cannot be both connected and exported
+2019.03.12.11:17:08 Info: system.acl_iface.temperature_pll: The legal reference clock frequency is 5.0 MHz..800.0 MHz
+2019.03.12.11:17:08 Info: system.acl_iface.temperature_pll: Able to implement PLL with user settings
+2019.03.12.11:17:08 Warning: system.acl_iface.acl_kernel_clk.kernel_clk: The input clock frequency must be known or set by the parent if this is a subsystem.
+2019.03.12.11:17:08 Info: system.acl_iface.acl_kernel_clk.kernel_pll: The legal reference clock frequency is 5.0 MHz..800.0 MHz
+2019.03.12.11:17:08 Info: system.acl_iface.acl_kernel_clk.kernel_pll: Able to implement PLL with user settings
+2019.03.12.11:17:08 Warning: system.acl_iface.em_pc_0: UniPHY Efficiency Monitor and Protocol Checker can only be connected to debug GUI when using a CSR port connection with an internally connected JTAG Avalon Master
+2019.03.12.11:17:08 Warning: system.acl_iface.em_pc_0.em_pc_core_0: em_pc_core_0.effmon_status_in_conduit_end must be exported, or connected to a matching conduit.
+2019.03.12.11:17:08 Warning: system.acl_iface.em_pc_0.em_pc_core_0: em_pc_core_0.status_conduit_end must be exported, or connected to a matching conduit.
+2019.03.12.11:17:08 Warning: system.acl_iface.em_pc_1: UniPHY Efficiency Monitor and Protocol Checker can only be connected to debug GUI when using a CSR port connection with an internally connected JTAG Avalon Master
+2019.03.12.11:17:08 Warning: system.acl_iface.em_pc_1.em_pc_core_0: em_pc_core_0.effmon_status_in_conduit_end must be exported, or connected to a matching conduit.
+2019.03.12.11:17:08 Warning: system.acl_iface.em_pc_1.em_pc_core_0: em_pc_core_0.status_conduit_end must be exported, or connected to a matching conduit.
+2019.03.12.11:17:08 Warning: system.acl_iface.kernel_clk: The input clock frequency must be known or set by the parent if this is a subsystem.
+2019.03.12.11:17:08 Warning: system.acl_iface.acl_memory_bank_divider_0: add_instance: Component altera_avalon_mm_bridge version 12.1 is not installed - loaded latest installed version 16.1 instead.  Please check for parameter mismatches 
+2019.03.12.11:17:08 Warning: system.acl_iface.acl_memory_bank_divider: add_instance: Component clock_source version 12.1 is not installed - loaded latest installed version 16.1 instead.  Please check for parameter mismatches 
+2019.03.12.11:17:08 Warning: system.acl_iface.acl_memory_bank_divider: add_instance: Component clock_source version 12.1 is not installed - loaded latest installed version 16.1 instead.  Please check for parameter mismatches 
+2019.03.12.11:17:08 Warning: system.acl_iface.acl_kernel_clk.kernel_clk/acl_memory_bank_divider_0.kernel_clk: acl_memory_bank_divider_0.kernel_clk requires 100000000Hz, but source has frequency of 0Hz
+2019.03.12.11:17:08 Warning: system.acl_iface.pcie: pcie.reconfig_clk_locked must be exported, or connected to a matching conduit.
+2019.03.12.11:17:08 Warning: system.acl_iface.pcie: pcie.hip_pipe must be exported, or connected to a matching conduit.
+2019.03.12.11:17:08 Warning: system.acl_iface.ddr3a: ddr3a.pll_sharing must be exported, or connected to a matching conduit.
+2019.03.12.11:17:08 Warning: system.acl_iface.ddr3b: ddr3b.pll_sharing must be exported, or connected to a matching conduit.
+2019.03.12.11:17:08 Warning: system.acl_iface.temperature_pll: temperature_pll.locked must be exported, or connected to a matching conduit.
+2019.03.12.11:17:08 Warning: system.acl_iface.acl_kernel_clk: acl_kernel_clk.kernel_pll_locked must be exported, or connected to a matching conduit.
+2019.03.12.11:17:08 Warning: system.acl_iface.uniphy_status_0: uniphy_status_0.status_export must be exported, or connected to a matching conduit.
+2019.03.12.11:17:08 Warning: system.acl_iface.pcie: Interrupt sender pcie.CraIrq is not connected to an interrupt receiver
+2019.03.12.11:17:08 Warning: system.acl_iface.por_reset_counter: por_reset_counter.s must be connected to an Avalon-MM master
+2019.03.12.11:17:08 Warning: system.acl_iface.acl_internal_snoop: acl_iface.acl_internal_snoop must be connected to an Avalon-ST sink
+2019.03.12.11:17:08 Warning: system.acl_iface: acl_iface.pcie_hip_ctrl must be exported, or connected to a matching conduit.
+2019.03.12.11:17:08 Warning: system.acl_iface: acl_iface.acl_internal_memorg_kernel must be exported, or connected to a matching conduit.
+2019.03.12.11:17:08 Info: system: Generating system "system" for QUARTUS_SYNTH
+2019.03.12.11:17:12 Info: Interconnect is inserted between master acl_iface.kernel_cra and slave cra_root.cra_slave because the master has burstcount signal 1 bit wide, but the slave is 0 bit wide.
+2019.03.12.11:17:12 Info: Interconnect is inserted between master acl_iface.kernel_cra and slave cra_root.cra_slave because the master has address signal 30 bit wide, but the slave is 10 bit wide.
+2019.03.12.11:17:12 Info: Interconnect is inserted between master acl_iface.kernel_cra and slave cra_root.cra_slave because the master has debugaccess signal 1 bit wide, but the slave is 0 bit wide.
+2019.03.12.11:17:16 Info: Interconnect is inserted between master pipe_stage_ddr3a_dimm.m0 and slave ddr3a.avl because the master has address signal 31 bit wide, but the slave is 25 bit wide.
+2019.03.12.11:17:16 Info: Interconnect is inserted between master pipe_stage_ddr3a_dimm.m0 and slave ddr3a.avl because the master has debugaccess signal 1 bit wide, but the slave is 0 bit wide.
+2019.03.12.11:17:16 Info: Interconnect is inserted between master pipe_stage_ddr3b_dimm.m0 and slave ddr3b.avl because the master has address signal 31 bit wide, but the slave is 25 bit wide.
+2019.03.12.11:17:16 Info: Interconnect is inserted between master pipe_stage_ddr3b_dimm.m0 and slave ddr3b.avl because the master has debugaccess signal 1 bit wide, but the slave is 0 bit wide.
+2019.03.12.11:17:17 Info: Inserting clock-crossing logic between cmd_demux.src0 and cmd_mux.sink0
+2019.03.12.11:17:17 Info: Inserting clock-crossing logic between cmd_demux.src1 and cmd_mux_001.sink0
+2019.03.12.11:17:17 Info: Inserting clock-crossing logic between cmd_demux.src3 and cmd_mux_003.sink0
+2019.03.12.11:17:17 Info: Inserting clock-crossing logic between cmd_demux.src5 and cmd_mux_005.sink0
+2019.03.12.11:17:17 Info: Inserting clock-crossing logic between cmd_demux.src6 and cmd_mux_006.sink0
+2019.03.12.11:17:17 Info: Inserting clock-crossing logic between cmd_demux.src7 and cmd_mux_007.sink0
+2019.03.12.11:17:17 Info: Inserting clock-crossing logic between rsp_demux.src0 and rsp_mux.sink0
+2019.03.12.11:17:17 Info: Inserting clock-crossing logic between rsp_demux_001.src0 and rsp_mux.sink1
+2019.03.12.11:17:17 Info: Inserting clock-crossing logic between rsp_demux_003.src0 and rsp_mux.sink3
+2019.03.12.11:17:17 Info: Inserting clock-crossing logic between rsp_demux_005.src0 and rsp_mux.sink5
+2019.03.12.11:17:17 Info: Inserting clock-crossing logic between rsp_demux_006.src0 and rsp_mux.sink6
+2019.03.12.11:17:17 Info: Inserting clock-crossing logic between rsp_demux_007.src0 and rsp_mux.sink7
+2019.03.12.11:17:18 Info: Interconnect is inserted between master clock_cross_kernel_mem_0.m0 and slave em_pc_0.avl_in because the master has burstcount signal 5 bit wide, but the slave is 1 bit wide.
+2019.03.12.11:17:18 Info: Interconnect is inserted between master clock_cross_kernel_mem_0.m0 and slave em_pc_0.avl_in because the master has address signal 31 bit wide, but the slave is 25 bit wide.
+2019.03.12.11:17:18 Info: Interconnect is inserted between master clock_cross_kernel_mem_0.m0 and slave em_pc_0.avl_in because the master has debugaccess signal 1 bit wide, but the slave is 0 bit wide.
+2019.03.12.11:17:19 Info: Interconnect is inserted between master clock_cross_kernel_mem_1.m0 and slave em_pc_1.avl_in because the master has burstcount signal 5 bit wide, but the slave is 1 bit wide.
+2019.03.12.11:17:19 Info: Interconnect is inserted between master clock_cross_kernel_mem_1.m0 and slave em_pc_1.avl_in because the master has address signal 31 bit wide, but the slave is 25 bit wide.
+2019.03.12.11:17:19 Info: Interconnect is inserted between master clock_cross_kernel_mem_1.m0 and slave em_pc_1.avl_in because the master has debugaccess signal 1 bit wide, but the slave is 0 bit wide.
+2019.03.12.11:17:19 Info: Interconnect is inserted between master pcie.Rxm_BAR0 and slave pipe_stage_host_ctrl.s0 because the master has address signal 32 bit wide, but the slave is 18 bit wide.
+2019.03.12.11:17:19 Info: Interconnect is inserted between master pcie.Rxm_BAR0 and slave pipe_stage_host_ctrl.s0 because the master has readdata signal 128 bit wide, but the slave is 32 bit wide.
+2019.03.12.11:17:19 Info: Interconnect is inserted between master pcie.Rxm_BAR0 and slave pipe_stage_host_ctrl.s0 because the master has writedata signal 128 bit wide, but the slave is 32 bit wide.
+2019.03.12.11:17:19 Info: Interconnect is inserted between master pcie.Rxm_BAR0 and slave pipe_stage_host_ctrl.s0 because the master has burstcount signal 6 bit wide, but the slave is 1 bit wide.
+2019.03.12.11:17:19 Info: Interconnect is inserted between master pcie.Rxm_BAR0 and slave pipe_stage_host_ctrl.s0 because the master has byteenable signal 16 bit wide, but the slave is 4 bit wide.
+2019.03.12.11:17:19 Info: Interconnect is inserted between master clock_cross_dma_to_pcie.m0 and slave pcie.Txs because the master has readdata signal 512 bit wide, but the slave is 128 bit wide.
+2019.03.12.11:17:19 Info: Interconnect is inserted between master clock_cross_dma_to_pcie.m0 and slave pcie.Txs because the master has burstcount signal 5 bit wide, but the slave is 6 bit wide.
+2019.03.12.11:17:19 Info: Interconnect is inserted between master clock_cross_dma_to_pcie.m0 and slave pcie.Txs because the master has writedata signal 512 bit wide, but the slave is 128 bit wide.
+2019.03.12.11:17:19 Info: Interconnect is inserted between master clock_cross_dma_to_pcie.m0 and slave pcie.Txs because the master has byteenable signal 64 bit wide, but the slave is 16 bit wide.
+2019.03.12.11:17:19 Info: Interconnect is inserted between master clock_cross_dma_to_pcie.m0 and slave pcie.Txs because the master has debugaccess signal 1 bit wide, but the slave is 0 bit wide.
+2019.03.12.11:17:23 Info: acl_iface: "system" instantiated acl_iface_system "acl_iface"
+2019.03.12.11:17:23 Info: avs_filter10_cra_cra_ring: "system" instantiated cra_ring_node "avs_filter10_cra_cra_ring"
+2019.03.12.11:17:23 Info: cra_root: "system" instantiated cra_ring_root "cra_root"
+2019.03.12.11:17:23 Info: graph_fpga_system: "system" instantiated graph_fpga_system "graph_fpga_system"
+2019.03.12.11:17:24 Info: mm_interconnect_0: "system" instantiated altera_mm_interconnect "mm_interconnect_0"
+2019.03.12.11:17:24 Info: mm_interconnect_1: "system" instantiated altera_mm_interconnect "mm_interconnect_1"
+2019.03.12.11:17:24 Info: mm_interconnect_22: "system" instantiated altera_mm_interconnect "mm_interconnect_22"
+2019.03.12.11:17:24 Info: irq_mapper: "system" instantiated altera_irq_mapper "irq_mapper"
+2019.03.12.11:17:24 Info: rst_controller: "system" instantiated altera_reset_controller "rst_controller"
+2019.03.12.11:17:24 Info: pipe_stage_ddr3b_dimm: "acl_iface" instantiated altera_avalon_mm_bridge "pipe_stage_ddr3b_dimm"
+2019.03.12.11:17:24 Info: pcie: add_fileset_file ./altera_xcvr_functions.sv SYSTEM_VERILOG PATH ../../altera_xcvr_generic/altera_xcvr_functions.sv
+2019.03.12.11:17:24 Info: pcie: add_fileset_file ./sv_pcs.sv SYSTEM_VERILOG PATH ../../altera_xcvr_generic/sv/sv_pcs.sv
+2019.03.12.11:17:24 Info: pcie: add_fileset_file ./sv_pcs_ch.sv SYSTEM_VERILOG PATH ../../altera_xcvr_generic/sv/sv_pcs_ch.sv
+2019.03.12.11:17:24 Info: pcie: add_fileset_file ./sv_pma.sv SYSTEM_VERILOG PATH ../../altera_xcvr_generic/sv/sv_pma.sv
+2019.03.12.11:17:24 Info: pcie: add_fileset_file ./sv_reconfig_bundle_to_xcvr.sv SYSTEM_VERILOG PATH ../../altera_xcvr_generic/sv/sv_reconfig_bundle_to_xcvr.sv
+2019.03.12.11:17:24 Info: pcie: add_fileset_file ./sv_reconfig_bundle_to_ip.sv SYSTEM_VERILOG PATH ../../altera_xcvr_generic/sv/sv_reconfig_bundle_to_ip.sv
+2019.03.12.11:17:24 Info: pcie: add_fileset_file ./sv_reconfig_bundle_merger.sv SYSTEM_VERILOG PATH ../../altera_xcvr_generic/sv/sv_reconfig_bundle_merger.sv
+2019.03.12.11:17:24 Info: pcie: add_fileset_file ./sv_rx_pma.sv SYSTEM_VERILOG PATH ../../altera_xcvr_generic/sv/sv_rx_pma.sv
+2019.03.12.11:17:24 Info: pcie: add_fileset_file ./sv_tx_pma.sv SYSTEM_VERILOG PATH ../../altera_xcvr_generic/sv/sv_tx_pma.sv
+2019.03.12.11:17:24 Info: pcie: add_fileset_file ./sv_tx_pma_ch.sv SYSTEM_VERILOG PATH ../../altera_xcvr_generic/sv/sv_tx_pma_ch.sv
+2019.03.12.11:17:24 Info: pcie: add_fileset_file ./sv_xcvr_h.sv SYSTEM_VERILOG PATH ../../altera_xcvr_generic/sv/sv_xcvr_h.sv
+2019.03.12.11:17:24 Info: pcie: add_fileset_file ./sv_xcvr_avmm_csr.sv SYSTEM_VERILOG PATH ../../altera_xcvr_generic/sv/sv_xcvr_avmm_csr.sv
+2019.03.12.11:17:24 Info: pcie: add_fileset_file ./sv_xcvr_avmm_dcd.sv SYSTEM_VERILOG PATH ../../altera_xcvr_generic/sv/sv_xcvr_avmm_dcd.sv
+2019.03.12.11:17:24 Info: pcie: add_fileset_file ./sv_xcvr_avmm.sv SYSTEM_VERILOG PATH ../../altera_xcvr_generic/sv/sv_xcvr_avmm.sv
+2019.03.12.11:17:24 Info: pcie: add_fileset_file ./sv_xcvr_data_adapter.sv SYSTEM_VERILOG PATH ../../altera_xcvr_generic/sv/sv_xcvr_data_adapter.sv
+2019.03.12.11:17:24 Info: pcie: add_fileset_file ./sv_xcvr_native.sv SYSTEM_VERILOG PATH ../../altera_xcvr_generic/sv/sv_xcvr_native.sv
+2019.03.12.11:17:24 Info: pcie: add_fileset_file ./sv_xcvr_plls.sv SYSTEM_VERILOG PATH ../../altera_xcvr_generic/sv/sv_xcvr_plls.sv
+2019.03.12.11:17:24 Info: pcie: add_fileset_file ./alt_xcvr_resync.sv SYSTEM_VERILOG PATH ../../altera_xcvr_generic/ctrl/alt_xcvr_resync.sv
+2019.03.12.11:17:24 Info: pcie: add_fileset_file ./sv_hssi_10g_rx_pcs_rbc.sv SYSTEM_VERILOG PATH ../../altera_xcvr_generic/sv/rbc/sv_hssi_10g_rx_pcs_rbc.sv
+2019.03.12.11:17:24 Info: pcie: add_fileset_file ./sv_hssi_10g_tx_pcs_rbc.sv SYSTEM_VERILOG PATH ../../altera_xcvr_generic/sv/rbc/sv_hssi_10g_tx_pcs_rbc.sv
+2019.03.12.11:17:24 Info: pcie: add_fileset_file ./sv_hssi_8g_rx_pcs_rbc.sv SYSTEM_VERILOG PATH ../../altera_xcvr_generic/sv/rbc/sv_hssi_8g_rx_pcs_rbc.sv
+2019.03.12.11:17:24 Info: pcie: add_fileset_file ./sv_hssi_8g_tx_pcs_rbc.sv SYSTEM_VERILOG PATH ../../altera_xcvr_generic/sv/rbc/sv_hssi_8g_tx_pcs_rbc.sv
+2019.03.12.11:17:24 Info: pcie: add_fileset_file ./sv_hssi_8g_pcs_aggregate_rbc.sv SYSTEM_VERILOG PATH ../../altera_xcvr_generic/sv/rbc/sv_hssi_8g_pcs_aggregate_rbc.sv
+2019.03.12.11:17:24 Info: pcie: add_fileset_file ./sv_hssi_common_pcs_pma_interface_rbc.sv SYSTEM_VERILOG PATH ../../altera_xcvr_generic/sv/rbc/sv_hssi_common_pcs_pma_interface_rbc.sv
+2019.03.12.11:17:24 Info: pcie: add_fileset_file ./sv_hssi_common_pld_pcs_interface_rbc.sv SYSTEM_VERILOG PATH ../../altera_xcvr_generic/sv/rbc/sv_hssi_common_pld_pcs_interface_rbc.sv
+2019.03.12.11:17:24 Info: pcie: add_fileset_file ./sv_hssi_pipe_gen1_2_rbc.sv SYSTEM_VERILOG PATH ../../altera_xcvr_generic/sv/rbc/sv_hssi_pipe_gen1_2_rbc.sv
+2019.03.12.11:17:24 Info: pcie: add_fileset_file ./sv_hssi_pipe_gen3_rbc.sv SYSTEM_VERILOG PATH ../../altera_xcvr_generic/sv/rbc/sv_hssi_pipe_gen3_rbc.sv
+2019.03.12.11:17:24 Info: pcie: add_fileset_file ./sv_hssi_rx_pcs_pma_interface_rbc.sv SYSTEM_VERILOG PATH ../../altera_xcvr_generic/sv/rbc/sv_hssi_rx_pcs_pma_interface_rbc.sv
+2019.03.12.11:17:24 Info: pcie: add_fileset_file ./sv_hssi_rx_pld_pcs_interface_rbc.sv SYSTEM_VERILOG PATH ../../altera_xcvr_generic/sv/rbc/sv_hssi_rx_pld_pcs_interface_rbc.sv
+2019.03.12.11:17:24 Info: pcie: add_fileset_file ./sv_hssi_tx_pcs_pma_interface_rbc.sv SYSTEM_VERILOG PATH ../../altera_xcvr_generic/sv/rbc/sv_hssi_tx_pcs_pma_interface_rbc.sv
+2019.03.12.11:17:24 Info: pcie: add_fileset_file ./sv_hssi_tx_pld_pcs_interface_rbc.sv SYSTEM_VERILOG PATH ../../altera_xcvr_generic/sv/rbc/sv_hssi_tx_pld_pcs_interface_rbc.sv
+2019.03.12.11:17:24 Info: pcie: add_fileset_file ./sv_xcvr_emsip_adapter.sv SYSTEM_VERILOG PATH ../../altera_pcie_pipe/sv/sv_xcvr_emsip_adapter.sv
+2019.03.12.11:17:24 Info: pcie: add_fileset_file ./sv_xcvr_pipe_native.sv SYSTEM_VERILOG PATH ../../altera_pcie_pipe/sv/sv_xcvr_pipe_native.sv
+2019.03.12.11:17:24 Info: pcie: "acl_iface" instantiated altera_pcie_sv_hip_avmm "pcie"
+2019.03.12.11:17:24 Info: ddr3a: "acl_iface" instantiated altera_mem_if_ddr3_emif "ddr3a"
+2019.03.12.11:17:25 Info: ddr3b: "acl_iface" instantiated altera_mem_if_ddr3_emif "ddr3b"
+2019.03.12.11:17:25 Info: clock_cross_dma_to_pcie: "acl_iface" instantiated altera_avalon_mm_clock_crossing_bridge "clock_cross_dma_to_pcie"
+2019.03.12.11:17:25 Info: temperature_pll: "acl_iface" instantiated altera_pll "temperature_pll"
+2019.03.12.11:17:25 Info: temperature_0: "acl_iface" instantiated temperature "temperature_0"
+2019.03.12.11:17:25 Info: Inserting clock-crossing logic between cmd_demux.src2 and cmd_mux_002.sink0
+2019.03.12.11:17:25 Info: Inserting clock-crossing logic between rsp_demux_002.src0 and rsp_mux.sink2
+2019.03.12.11:17:26 Info: acl_kernel_clk: "acl_iface" instantiated acl_kernel_clk "acl_kernel_clk"
+2019.03.12.11:17:26 Info: Interconnect is inserted between master address_span_extender_0.expanded_master and slave kernel_cra.s0 because the master has readdata signal 32 bit wide, but the slave is 64 bit wide.
+2019.03.12.11:17:26 Info: Interconnect is inserted between master address_span_extender_0.expanded_master and slave kernel_cra.s0 because the master has writedata signal 32 bit wide, but the slave is 64 bit wide.
+2019.03.12.11:17:26 Info: Interconnect is inserted between master address_span_extender_0.expanded_master and slave kernel_cra.s0 because the master has byteenable signal 4 bit wide, but the slave is 8 bit wide.
+2019.03.12.11:17:27 Info: Inserting clock-crossing logic between cmd_demux.src0 and cmd_mux.sink0
+2019.03.12.11:17:27 Info: Inserting clock-crossing logic between cmd_demux.src1 and cmd_mux_001.sink0
+2019.03.12.11:17:27 Info: Inserting clock-crossing logic between rsp_demux.src0 and rsp_mux.sink0
+2019.03.12.11:17:27 Info: Inserting clock-crossing logic between rsp_demux_001.src0 and rsp_mux.sink1
+2019.03.12.11:17:28 Info: kernel_interface: "acl_iface" instantiated acl_kernel_interface "kernel_interface"
+2019.03.12.11:17:29 Info: dma_0: "acl_iface" instantiated acl_dma "dma_0"
+2019.03.12.11:17:29 Info: Interconnect is inserted between master bridge_0.m0 and slave em_pc_core_0.csr because the master has burstcount signal 1 bit wide, but the slave is 0 bit wide.
+2019.03.12.11:17:29 Info: Interconnect is inserted between master bridge_0.m0 and slave em_pc_core_0.csr because the master has address signal 14 bit wide, but the slave is 12 bit wide.
+2019.03.12.11:17:29 Info: Interconnect is inserted between master bridge_0.m0 and slave em_pc_core_0.csr because the master has debugaccess signal 1 bit wide, but the slave is 0 bit wide.
+2019.03.12.11:17:30 Info: em_pc_0: "acl_iface" instantiated altera_avalon_em_pc "em_pc_0"
+2019.03.12.11:17:30 Info: Interconnect is inserted between master pipe_stage_presplitter.m0 and slave mem_splitter_0.s because the master has address signal 32 bit wide, but the slave is 26 bit wide.
+2019.03.12.11:17:30 Info: Interconnect is inserted between master pipe_stage_presplitter.m0 and slave mem_splitter_0.s because the master has debugaccess signal 1 bit wide, but the slave is 0 bit wide.
+2019.03.12.11:17:30 Info: acl_memory_bank_divider_0: "acl_iface" instantiated acl_memory_bank_divider "acl_memory_bank_divider_0"
+2019.03.12.11:17:30 Info: por_reset_counter: "acl_iface" instantiated sw_reset "por_reset_counter"
+2019.03.12.11:17:30 Info: uniphy_status_0: "acl_iface" instantiated uniphy_status "uniphy_status_0"
+2019.03.12.11:17:30 Info: version_id_0: "acl_iface" instantiated version_id "version_id_0"
+2019.03.12.11:17:30 Info: mm_interconnect_0: "acl_iface" instantiated altera_mm_interconnect "mm_interconnect_0"
+2019.03.12.11:17:30 Info: mm_interconnect_1: "acl_iface" instantiated altera_mm_interconnect "mm_interconnect_1"
+2019.03.12.11:17:31 Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+2019.03.12.11:17:31 Info: avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
+2019.03.12.11:17:31 Info: avalon_st_adapter_002: Inserting error_adapter: error_adapter_0
+2019.03.12.11:17:31 Info: avalon_st_adapter_003: Inserting error_adapter: error_adapter_0
+2019.03.12.11:17:31 Info: avalon_st_adapter_004: Inserting error_adapter: error_adapter_0
+2019.03.12.11:17:31 Info: avalon_st_adapter_005: Inserting error_adapter: error_adapter_0
+2019.03.12.11:17:31 Info: avalon_st_adapter_006: Inserting error_adapter: error_adapter_0
+2019.03.12.11:17:31 Info: avalon_st_adapter_007: Inserting error_adapter: error_adapter_0
+2019.03.12.11:17:31 Info: avalon_st_adapter_008: Inserting error_adapter: error_adapter_0
+2019.03.12.11:17:31 Info: avalon_st_adapter_009: Inserting error_adapter: error_adapter_0
+2019.03.12.11:17:32 Info: mm_interconnect_2: "acl_iface" instantiated altera_mm_interconnect "mm_interconnect_2"
+2019.03.12.11:17:32 Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+2019.03.12.11:17:32 Info: avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
+2019.03.12.11:17:32 Info: mm_interconnect_3: "acl_iface" instantiated altera_mm_interconnect "mm_interconnect_3"
+2019.03.12.11:17:32 Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+2019.03.12.11:17:32 Info: mm_interconnect_5: "acl_iface" instantiated altera_mm_interconnect "mm_interconnect_5"
+2019.03.12.11:17:32 Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+2019.03.12.11:17:33 Info: mm_interconnect_6: "acl_iface" instantiated altera_mm_interconnect "mm_interconnect_6"
+2019.03.12.11:17:33 Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+2019.03.12.11:17:33 Info: mm_interconnect_7: "acl_iface" instantiated altera_mm_interconnect "mm_interconnect_7"
+2019.03.12.11:17:33 Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+2019.03.12.11:17:33 Info: mm_interconnect_8: "acl_iface" instantiated altera_mm_interconnect "mm_interconnect_8"
+2019.03.12.11:17:33 Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+2019.03.12.11:17:33 Info: mm_interconnect_9: "acl_iface" instantiated altera_mm_interconnect "mm_interconnect_9"
+2019.03.12.11:17:33 Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+2019.03.12.11:17:34 Info: mm_interconnect_10: "acl_iface" instantiated altera_mm_interconnect "mm_interconnect_10"
+2019.03.12.11:17:34 Info: mm_interconnect_12: "acl_iface" instantiated altera_mm_interconnect "mm_interconnect_12"
+2019.03.12.11:17:34 Info: irq_mapper: "acl_iface" instantiated altera_irq_mapper "irq_mapper"
+2019.03.12.11:17:34 Info: irq_synchronizer: "acl_iface" instantiated altera_irq_clock_crosser "irq_synchronizer"
+2019.03.12.11:17:34 Info: graph_fpga_system_avm_memgmem0_port_0_0_rw_translator: "mm_interconnect_0" instantiated altera_merlin_master_translator "graph_fpga_system_avm_memgmem0_port_0_0_rw_translator"
+2019.03.12.11:17:34 Info: acl_iface_kernel_mem0_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "acl_iface_kernel_mem0_translator"
+2019.03.12.11:17:34 Info: pll0: "ddr3a" instantiated altera_mem_if_ddr3_pll "pll0"
+2019.03.12.11:17:34 Info: p0: Generating clock pair generator
+2019.03.12.11:17:39 Info: p0: Generating system_acl_iface_ddr3a_p0_altdqdqs
+2019.03.12.11:17:51 Info: p0: 
+2019.03.12.11:17:51 Info: p0: *****************************
+2019.03.12.11:17:51 Info: p0: 
+2019.03.12.11:17:51 Info: p0: Remember to run the system_acl_iface_ddr3a_p0_pin_assignments.tcl
+2019.03.12.11:17:51 Info: p0: script after running Synthesis and before Fitting.
+2019.03.12.11:17:51 Info: p0: 
+2019.03.12.11:17:51 Info: p0: *****************************
+2019.03.12.11:17:51 Info: p0: 
+2019.03.12.11:17:51 Info: p0: "ddr3a" instantiated altera_mem_if_ddr3_phy_core "p0"
+2019.03.12.11:17:51 Info: m0: "ddr3a" instantiated altera_mem_if_ddr3_afi_mux "m0"
+2019.03.12.11:17:59 Info: s0: Generating Qsys sequencer system
+2019.03.12.11:18:11 Info: s0: QSYS sequencer system generated successfully
+2019.03.12.11:18:22 Info: s0: "ddr3a" instantiated altera_mem_if_ddr3_qseq "s0"
+2019.03.12.11:18:22 Info: Reusing file /home/xinyuc/work/de5_work/fccm19_experiments/PR/pe_num/PR_part_16PE/tmp/graph_fpga/system/synthesis/submodules/altera_merlin_master_translator.sv
+2019.03.12.11:18:22 Info: Reusing file /home/xinyuc/work/de5_work/fccm19_experiments/PR/pe_num/PR_part_16PE/tmp/graph_fpga/system/synthesis/submodules/altera_merlin_slave_translator.sv
+2019.03.12.11:18:22 Info: c0: "ddr3a" instantiated altera_mem_if_nextgen_ddr3_controller "c0"
+2019.03.12.11:18:22 Info: oct0: "ddr3a" instantiated altera_mem_if_oct "oct0"
+2019.03.12.11:18:22 Info: dll0: "ddr3a" instantiated altera_mem_if_dll "dll0"
+2019.03.12.11:18:23 Info: pll0: "ddr3b" instantiated altera_mem_if_ddr3_pll "pll0"
+2019.03.12.11:18:23 Info: p0: Generating clock pair generator
+2019.03.12.11:18:28 Info: p0: Generating system_acl_iface_ddr3b_p0_altdqdqs
+2019.03.12.11:18:44 Info: p0: 
+2019.03.12.11:18:44 Info: p0: *****************************
+2019.03.12.11:18:44 Info: p0: 
+2019.03.12.11:18:44 Info: p0: Remember to run the system_acl_iface_ddr3b_p0_pin_assignments.tcl
+2019.03.12.11:18:44 Info: p0: script after running Synthesis and before Fitting.
+2019.03.12.11:18:44 Info: p0: 
+2019.03.12.11:18:44 Info: p0: *****************************
+2019.03.12.11:18:44 Info: p0: 
+2019.03.12.11:18:44 Info: p0: "ddr3b" instantiated altera_mem_if_ddr3_phy_core "p0"
+2019.03.12.11:18:44 Info: Reusing file /home/xinyuc/work/de5_work/fccm19_experiments/PR/pe_num/PR_part_16PE/tmp/graph_fpga/system/synthesis/submodules/altdq_dqs2_stratixv.sv
+2019.03.12.11:18:51 Info: s0: Generating Qsys sequencer system
+2019.03.12.11:19:04 Info: s0: QSYS sequencer system generated successfully
+2019.03.12.11:19:14 Info: s0: "ddr3b" instantiated altera_mem_if_ddr3_qseq "s0"
+2019.03.12.11:19:14 Info: Reusing file /home/xinyuc/work/de5_work/fccm19_experiments/PR/pe_num/PR_part_16PE/tmp/graph_fpga/system/synthesis/submodules/altera_mem_if_sequencer_rst.sv
+2019.03.12.11:19:14 Info: Reusing file /home/xinyuc/work/de5_work/fccm19_experiments/PR/pe_num/PR_part_16PE/tmp/graph_fpga/system/synthesis/submodules/altera_mem_if_sequencer_cpu_no_ifdef_params_synth_cpu_inst.v
+2019.03.12.11:19:14 Info: Reusing file /home/xinyuc/work/de5_work/fccm19_experiments/PR/pe_num/PR_part_16PE/tmp/graph_fpga/system/synthesis/submodules/altera_mem_if_sequencer_cpu_no_ifdef_params_synth_cpu_inst_test_bench.v
+2019.03.12.11:19:14 Info: Reusing file /home/xinyuc/work/de5_work/fccm19_experiments/PR/pe_num/PR_part_16PE/tmp/graph_fpga/system/synthesis/submodules/sequencer_scc_mgr.sv
+2019.03.12.11:19:14 Info: Reusing file /home/xinyuc/work/de5_work/fccm19_experiments/PR/pe_num/PR_part_16PE/tmp/graph_fpga/system/synthesis/submodules/sequencer_scc_siii_wrapper.sv
+2019.03.12.11:19:14 Info: Reusing file /home/xinyuc/work/de5_work/fccm19_experiments/PR/pe_num/PR_part_16PE/tmp/graph_fpga/system/synthesis/submodules/sequencer_scc_siii_phase_decode.v
+2019.03.12.11:19:14 Info: Reusing file /home/xinyuc/work/de5_work/fccm19_experiments/PR/pe_num/PR_part_16PE/tmp/graph_fpga/system/synthesis/submodules/sequencer_scc_sv_wrapper.sv
+2019.03.12.11:19:14 Info: Reusing file /home/xinyuc/work/de5_work/fccm19_experiments/PR/pe_num/PR_part_16PE/tmp/graph_fpga/system/synthesis/submodules/sequencer_scc_sv_phase_decode.v
+2019.03.12.11:19:14 Info: Reusing file /home/xinyuc/work/de5_work/fccm19_experiments/PR/pe_num/PR_part_16PE/tmp/graph_fpga/system/synthesis/submodules/sequencer_scc_acv_wrapper.sv
+2019.03.12.11:19:14 Info: Reusing file /home/xinyuc/work/de5_work/fccm19_experiments/PR/pe_num/PR_part_16PE/tmp/graph_fpga/system/synthesis/submodules/sequencer_scc_acv_phase_decode.v
+2019.03.12.11:19:14 Info: Reusing file /home/xinyuc/work/de5_work/fccm19_experiments/PR/pe_num/PR_part_16PE/tmp/graph_fpga/system/synthesis/submodules/sequencer_scc_reg_file.v
+2019.03.12.11:19:14 Info: Reusing file /home/xinyuc/work/de5_work/fccm19_experiments/PR/pe_num/PR_part_16PE/tmp/graph_fpga/system/synthesis/submodules/sequencer_reg_file.sv
+2019.03.12.11:19:14 Info: Reusing file /home/xinyuc/work/de5_work/fccm19_experiments/PR/pe_num/PR_part_16PE/tmp/graph_fpga/system/synthesis/submodules/sequencer_phy_mgr.sv
+2019.03.12.11:19:14 Info: Reusing file /home/xinyuc/work/de5_work/fccm19_experiments/PR/pe_num/PR_part_16PE/tmp/graph_fpga/system/synthesis/submodules/sequencer_data_mgr.sv
+2019.03.12.11:19:14 Info: Reusing file /home/xinyuc/work/de5_work/fccm19_experiments/PR/pe_num/PR_part_16PE/tmp/graph_fpga/system/synthesis/submodules/rw_manager_ddr3.v
+2019.03.12.11:19:14 Info: Reusing file /home/xinyuc/work/de5_work/fccm19_experiments/PR/pe_num/PR_part_16PE/tmp/graph_fpga/system/synthesis/submodules/rw_manager_ac_ROM_reg.v
+2019.03.12.11:19:14 Info: Reusing file /home/xinyuc/work/de5_work/fccm19_experiments/PR/pe_num/PR_part_16PE/tmp/graph_fpga/system/synthesis/submodules/rw_manager_bitcheck.v
+2019.03.12.11:19:14 Info: Reusing file /home/xinyuc/work/de5_work/fccm19_experiments/PR/pe_num/PR_part_16PE/tmp/graph_fpga/system/synthesis/submodules/rw_manager_core.sv
+2019.03.12.11:19:14 Info: Reusing file /home/xinyuc/work/de5_work/fccm19_experiments/PR/pe_num/PR_part_16PE/tmp/graph_fpga/system/synthesis/submodules/rw_manager_data_broadcast.v
+2019.03.12.11:19:14 Info: Reusing file /home/xinyuc/work/de5_work/fccm19_experiments/PR/pe_num/PR_part_16PE/tmp/graph_fpga/system/synthesis/submodules/rw_manager_data_decoder.v
+2019.03.12.11:19:14 Info: Reusing file /home/xinyuc/work/de5_work/fccm19_experiments/PR/pe_num/PR_part_16PE/tmp/graph_fpga/system/synthesis/submodules/rw_manager_datamux.v
+2019.03.12.11:19:14 Info: Reusing file /home/xinyuc/work/de5_work/fccm19_experiments/PR/pe_num/PR_part_16PE/tmp/graph_fpga/system/synthesis/submodules/rw_manager_di_buffer.v
+2019.03.12.11:19:14 Info: Reusing file /home/xinyuc/work/de5_work/fccm19_experiments/PR/pe_num/PR_part_16PE/tmp/graph_fpga/system/synthesis/submodules/rw_manager_di_buffer_wrap.v
+2019.03.12.11:19:14 Info: Reusing file /home/xinyuc/work/de5_work/fccm19_experiments/PR/pe_num/PR_part_16PE/tmp/graph_fpga/system/synthesis/submodules/rw_manager_dm_decoder.v
+2019.03.12.11:19:14 Info: Reusing file /home/xinyuc/work/de5_work/fccm19_experiments/PR/pe_num/PR_part_16PE/tmp/graph_fpga/system/synthesis/submodules/rw_manager_generic.sv
+2019.03.12.11:19:14 Info: Reusing file /home/xinyuc/work/de5_work/fccm19_experiments/PR/pe_num/PR_part_16PE/tmp/graph_fpga/system/synthesis/submodules/rw_manager_inst_ROM_reg.v
+2019.03.12.11:19:14 Info: Reusing file /home/xinyuc/work/de5_work/fccm19_experiments/PR/pe_num/PR_part_16PE/tmp/graph_fpga/system/synthesis/submodules/rw_manager_jumplogic.v
+2019.03.12.11:19:14 Info: Reusing file /home/xinyuc/work/de5_work/fccm19_experiments/PR/pe_num/PR_part_16PE/tmp/graph_fpga/system/synthesis/submodules/rw_manager_lfsr72.v
+2019.03.12.11:19:14 Info: Reusing file /home/xinyuc/work/de5_work/fccm19_experiments/PR/pe_num/PR_part_16PE/tmp/graph_fpga/system/synthesis/submodules/rw_manager_lfsr36.v
+2019.03.12.11:19:14 Info: Reusing file /home/xinyuc/work/de5_work/fccm19_experiments/PR/pe_num/PR_part_16PE/tmp/graph_fpga/system/synthesis/submodules/rw_manager_lfsr12.v
+2019.03.12.11:19:14 Info: Reusing file /home/xinyuc/work/de5_work/fccm19_experiments/PR/pe_num/PR_part_16PE/tmp/graph_fpga/system/synthesis/submodules/rw_manager_pattern_fifo.v
+2019.03.12.11:19:14 Info: Reusing file /home/xinyuc/work/de5_work/fccm19_experiments/PR/pe_num/PR_part_16PE/tmp/graph_fpga/system/synthesis/submodules/rw_manager_ram.v
+2019.03.12.11:19:14 Info: Reusing file /home/xinyuc/work/de5_work/fccm19_experiments/PR/pe_num/PR_part_16PE/tmp/graph_fpga/system/synthesis/submodules/rw_manager_ram_csr.v
+2019.03.12.11:19:14 Info: Reusing file /home/xinyuc/work/de5_work/fccm19_experiments/PR/pe_num/PR_part_16PE/tmp/graph_fpga/system/synthesis/submodules/rw_manager_read_datapath.v
+2019.03.12.11:19:14 Info: Reusing file /home/xinyuc/work/de5_work/fccm19_experiments/PR/pe_num/PR_part_16PE/tmp/graph_fpga/system/synthesis/submodules/rw_manager_write_decoder.v
+2019.03.12.11:19:14 Info: Reusing file /home/xinyuc/work/de5_work/fccm19_experiments/PR/pe_num/PR_part_16PE/tmp/graph_fpga/system/synthesis/submodules/rw_manager_ac_ROM_no_ifdef_params.v
+2019.03.12.11:19:14 Info: Reusing file /home/xinyuc/work/de5_work/fccm19_experiments/PR/pe_num/PR_part_16PE/tmp/graph_fpga/system/synthesis/submodules/rw_manager_inst_ROM_no_ifdef_params.v
+2019.03.12.11:19:14 Info: Reusing file /home/xinyuc/work/de5_work/fccm19_experiments/PR/pe_num/PR_part_16PE/tmp/graph_fpga/system/synthesis/submodules/altera_mem_if_sequencer_mem_no_ifdef_params.sv
+2019.03.12.11:19:14 Info: Reusing file /home/xinyuc/work/de5_work/fccm19_experiments/PR/pe_num/PR_part_16PE/tmp/graph_fpga/system/synthesis/submodules/altera_merlin_master_translator.sv
+2019.03.12.11:19:14 Info: Reusing file /home/xinyuc/work/de5_work/fccm19_experiments/PR/pe_num/PR_part_16PE/tmp/graph_fpga/system/synthesis/submodules/altera_merlin_slave_translator.sv
+2019.03.12.11:19:14 Info: Reusing file /home/xinyuc/work/de5_work/fccm19_experiments/PR/pe_num/PR_part_16PE/tmp/graph_fpga/system/synthesis/submodules/altera_merlin_master_agent.sv
+2019.03.12.11:19:14 Info: Reusing file /home/xinyuc/work/de5_work/fccm19_experiments/PR/pe_num/PR_part_16PE/tmp/graph_fpga/system/synthesis/submodules/altera_merlin_slave_agent.sv
+2019.03.12.11:19:14 Info: Reusing file /home/xinyuc/work/de5_work/fccm19_experiments/PR/pe_num/PR_part_16PE/tmp/graph_fpga/system/synthesis/submodules/altera_merlin_burst_uncompressor.sv
+2019.03.12.11:19:14 Info: Reusing file /home/xinyuc/work/de5_work/fccm19_experiments/PR/pe_num/PR_part_16PE/tmp/graph_fpga/system/synthesis/submodules/altera_avalon_sc_fifo.v
+2019.03.12.11:19:14 Info: Reusing file /home/xinyuc/work/de5_work/fccm19_experiments/PR/pe_num/PR_part_16PE/tmp/graph_fpga/system/synthesis/submodules/altera_merlin_arbitrator.sv
+2019.03.12.11:19:14 Info: kernel_pll: "acl_kernel_clk" instantiated altera_pll "kernel_pll"
+2019.03.12.11:19:14 Warning: quartus_synth: A Duplicate file was overwritten with path: altera_pll_reconfig_top.v
+2019.03.12.11:19:14 Info: pll_reconfig_0: "acl_kernel_clk" instantiated altera_pll_reconfig "pll_reconfig_0"
+2019.03.12.11:19:14 Info: counter: "acl_kernel_clk" instantiated acl_timer "counter"
+2019.03.12.11:19:14 Info: global_routing_kernel_clk: "acl_kernel_clk" instantiated global_routing_clk "global_routing_kernel_clk"
+2019.03.12.11:19:14 Info: pll_lock_avs_0: "acl_kernel_clk" instantiated pll_lock_avs "pll_lock_avs_0"
+2019.03.12.11:19:14 Info: pll_rom: Starting RTL generation for module 'system_acl_iface_acl_kernel_clk_pll_rom'
+2019.03.12.11:19:14 Info: pll_rom:   Generation command is [exec /home/xinyuc/.AllTools/intelFPGA/16.1/quartus/linux64/perl/bin/perl -I /home/xinyuc/.AllTools/intelFPGA/16.1/quartus/linux64/perl/lib -I /home/xinyuc/.AllTools/intelFPGA/16.1/quartus/sopc_builder/bin/europa -I /home/xinyuc/.AllTools/intelFPGA/16.1/quartus/sopc_builder/bin/perl_lib -I /home/xinyuc/.AllTools/intelFPGA/16.1/quartus/sopc_builder/bin -I /home/xinyuc/.AllTools/intelFPGA/16.1/quartus/../ip/altera/sopc_builder_ip/common -I /home/xinyuc/.AllTools/intelFPGA/16.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- /home/xinyuc/.AllTools/intelFPGA/16.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=system_acl_iface_acl_kernel_clk_pll_rom --dir=/tmp/alt7967_7524614479947749014.dir/0026_pll_rom_gen/ --quartus_dir=/home/xinyuc/.AllTools/intelFPGA/16.1/quartus --verilog --config=/tmp/alt7967_7524614479947749014.dir/0026_pll_rom_gen//system_acl_iface_acl_kernel_clk_pll_rom_component_configuration.pl  --do_build_sim=0  ]
+2019.03.12.11:19:14 Info: pll_rom: Done RTL generation for module 'system_acl_iface_acl_kernel_clk_pll_rom'
+2019.03.12.11:19:14 Info: pll_rom: "acl_kernel_clk" instantiated altera_avalon_onchip_memory2 "pll_rom"
+2019.03.12.11:19:15 Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+2019.03.12.11:19:15 Info: avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
+2019.03.12.11:19:15 Info: avalon_st_adapter_002: Inserting error_adapter: error_adapter_0
+2019.03.12.11:19:15 Info: avalon_st_adapter_003: Inserting error_adapter: error_adapter_0
+2019.03.12.11:19:15 Info: avalon_st_adapter_004: Inserting error_adapter: error_adapter_0
+2019.03.12.11:19:15 Info: avalon_st_adapter_005: Inserting error_adapter: error_adapter_0
+2019.03.12.11:19:15 Info: mm_interconnect_0: "acl_kernel_clk" instantiated altera_mm_interconnect "mm_interconnect_0"
+2019.03.12.11:19:15 Info: address_span_extender_0: "kernel_interface" instantiated altera_address_span_extender "address_span_extender_0"
+2019.03.12.11:19:15 Info: mem_org_mode: "kernel_interface" instantiated mem_org_mode "mem_org_mode"
+2019.03.12.11:19:15 Info: irq_bridge_0: "kernel_interface" instantiated altera_irq_bridge "irq_bridge_0"
+2019.03.12.11:19:15 Info: sys_description_rom: Starting RTL generation for module 'system_acl_iface_kernel_interface_sys_description_rom'
+2019.03.12.11:19:15 Info: sys_description_rom:   Generation command is [exec /home/xinyuc/.AllTools/intelFPGA/16.1/quartus/linux64/perl/bin/perl -I /home/xinyuc/.AllTools/intelFPGA/16.1/quartus/linux64/perl/lib -I /home/xinyuc/.AllTools/intelFPGA/16.1/quartus/sopc_builder/bin/europa -I /home/xinyuc/.AllTools/intelFPGA/16.1/quartus/sopc_builder/bin/perl_lib -I /home/xinyuc/.AllTools/intelFPGA/16.1/quartus/sopc_builder/bin -I /home/xinyuc/.AllTools/intelFPGA/16.1/quartus/../ip/altera/sopc_builder_ip/common -I /home/xinyuc/.AllTools/intelFPGA/16.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- /home/xinyuc/.AllTools/intelFPGA/16.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=system_acl_iface_kernel_interface_sys_description_rom --dir=/tmp/alt7967_7524614479947749014.dir/0029_sys_description_rom_gen/ --quartus_dir=/home/xinyuc/.AllTools/intelFPGA/16.1/quartus --verilog --config=/tmp/alt7967_7524614479947749014.dir/0029_sys_description_rom_gen//system_acl_iface_kernel_interface_sys_description_rom_component_configuration.pl  --do_build_sim=0  ]
+2019.03.12.11:19:16 Info: sys_description_rom: Done RTL generation for module 'system_acl_iface_kernel_interface_sys_description_rom'
+2019.03.12.11:19:16 Info: sys_description_rom: "kernel_interface" instantiated altera_avalon_onchip_memory2 "sys_description_rom"
+2019.03.12.11:19:16 Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+2019.03.12.11:19:16 Info: mm_interconnect_0: "kernel_interface" instantiated altera_mm_interconnect "mm_interconnect_0"
+2019.03.12.11:19:16 Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+2019.03.12.11:19:16 Info: avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
+2019.03.12.11:19:16 Info: avalon_st_adapter_002: Inserting error_adapter: error_adapter_0
+2019.03.12.11:19:16 Info: avalon_st_adapter_003: Inserting error_adapter: error_adapter_0
+2019.03.12.11:19:16 Info: avalon_st_adapter_004: Inserting error_adapter: error_adapter_0
+2019.03.12.11:19:16 Info: avalon_st_adapter_005: Inserting error_adapter: error_adapter_0
+2019.03.12.11:19:17 Info: mm_interconnect_1: "kernel_interface" instantiated altera_mm_interconnect "mm_interconnect_1"
+2019.03.12.11:19:17 Info: dma: "dma_0" instantiated acl_dma_core "dma"
+2019.03.12.11:19:17 Info: mm_interconnect_0: "dma_0" instantiated altera_mm_interconnect "mm_interconnect_0"
+2019.03.12.11:19:17 Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+2019.03.12.11:19:17 Info: mm_interconnect_1: "dma_0" instantiated altera_mm_interconnect "mm_interconnect_1"
+2019.03.12.11:19:18 Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+2019.03.12.11:19:18 Info: avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
+2019.03.12.11:19:18 Info: avalon_st_adapter_002: Inserting error_adapter: error_adapter_0
+2019.03.12.11:19:18 Info: mm_interconnect_2: "dma_0" instantiated altera_mm_interconnect "mm_interconnect_2"
+2019.03.12.11:19:18 Info: em_pc_core_0: "em_pc_0" instantiated altera_avalon_em_pc_core "em_pc_core_0"
+2019.03.12.11:19:18 Info: mm_interconnect_0: "em_pc_0" instantiated altera_mm_interconnect "mm_interconnect_0"
+2019.03.12.11:19:20 Info: acl_snoop_adapter_0: "acl_memory_bank_divider_0" instantiated acl_snoop_adapter "acl_snoop_adapter_0"
+2019.03.12.11:19:20 Info: mem_splitter_0: "acl_memory_bank_divider_0" instantiated mem_splitter "mem_splitter_0"
+2019.03.12.11:19:20 Info: mm_interconnect_0: "acl_memory_bank_divider_0" instantiated altera_mm_interconnect "mm_interconnect_0"
+2019.03.12.11:19:20 Info: mm_interconnect_1: "acl_memory_bank_divider_0" instantiated altera_mm_interconnect "mm_interconnect_1"
+2019.03.12.11:19:20 Info: pipe_stage_host_ctrl_m0_agent: "mm_interconnect_2" instantiated altera_merlin_master_agent "pipe_stage_host_ctrl_m0_agent"
+2019.03.12.11:19:20 Info: Reusing file /home/xinyuc/work/de5_work/fccm19_experiments/PR/pe_num/PR_part_16PE/tmp/graph_fpga/system/synthesis/submodules/altera_merlin_master_agent.sv
+2019.03.12.11:19:20 Info: temperature_0_s_agent: "mm_interconnect_2" instantiated altera_merlin_slave_agent "temperature_0_s_agent"
+2019.03.12.11:19:20 Info: Reusing file /home/xinyuc/work/de5_work/fccm19_experiments/PR/pe_num/PR_part_16PE/tmp/graph_fpga/system/synthesis/submodules/altera_merlin_slave_agent.sv
+2019.03.12.11:19:20 Info: Reusing file /home/xinyuc/work/de5_work/fccm19_experiments/PR/pe_num/PR_part_16PE/tmp/graph_fpga/system/synthesis/submodules/altera_merlin_burst_uncompressor.sv
+2019.03.12.11:19:20 Info: temperature_0_s_agent_rsp_fifo: "mm_interconnect_2" instantiated altera_avalon_sc_fifo "temperature_0_s_agent_rsp_fifo"
+2019.03.12.11:19:20 Info: Reusing file /home/xinyuc/work/de5_work/fccm19_experiments/PR/pe_num/PR_part_16PE/tmp/graph_fpga/system/synthesis/submodules/altera_avalon_sc_fifo.v
+2019.03.12.11:19:20 Info: router: "mm_interconnect_2" instantiated altera_merlin_router "router"
+2019.03.12.11:19:20 Info: router_001: "mm_interconnect_2" instantiated altera_merlin_router "router_001"
+2019.03.12.11:19:20 Info: router_004: "mm_interconnect_2" instantiated altera_merlin_router "router_004"
+2019.03.12.11:19:20 Info: router_008: "mm_interconnect_2" instantiated altera_merlin_router "router_008"
+2019.03.12.11:19:20 Info: pipe_stage_host_ctrl_m0_limiter: "mm_interconnect_2" instantiated altera_merlin_traffic_limiter "pipe_stage_host_ctrl_m0_limiter"
+2019.03.12.11:19:20 Info: Reusing file /home/xinyuc/work/de5_work/fccm19_experiments/PR/pe_num/PR_part_16PE/tmp/graph_fpga/system/synthesis/submodules/altera_avalon_sc_fifo.v
+2019.03.12.11:19:20 Info: cmd_demux: "mm_interconnect_2" instantiated altera_merlin_demultiplexer "cmd_demux"
+2019.03.12.11:19:20 Info: cmd_mux: "mm_interconnect_2" instantiated altera_merlin_multiplexer "cmd_mux"
+2019.03.12.11:19:20 Info: Reusing file /home/xinyuc/work/de5_work/fccm19_experiments/PR/pe_num/PR_part_16PE/tmp/graph_fpga/system/synthesis/submodules/altera_merlin_arbitrator.sv
+2019.03.12.11:19:20 Info: rsp_demux: "mm_interconnect_2" instantiated altera_merlin_demultiplexer "rsp_demux"
+2019.03.12.11:19:20 Info: rsp_demux_001: "mm_interconnect_2" instantiated altera_merlin_demultiplexer "rsp_demux_001"
+2019.03.12.11:19:20 Info: rsp_demux_002: "mm_interconnect_2" instantiated altera_merlin_demultiplexer "rsp_demux_002"
+2019.03.12.11:19:20 Info: rsp_demux_003: "mm_interconnect_2" instantiated altera_merlin_demultiplexer "rsp_demux_003"
+2019.03.12.11:19:20 Info: rsp_mux: "mm_interconnect_2" instantiated altera_merlin_multiplexer "rsp_mux"
+2019.03.12.11:19:20 Info: Reusing file /home/xinyuc/work/de5_work/fccm19_experiments/PR/pe_num/PR_part_16PE/tmp/graph_fpga/system/synthesis/submodules/altera_merlin_arbitrator.sv
+2019.03.12.11:19:20 Info: dma_0_csr_cmd_width_adapter: "mm_interconnect_2" instantiated altera_merlin_width_adapter "dma_0_csr_cmd_width_adapter"
+2019.03.12.11:19:20 Info: Reusing file /home/xinyuc/work/de5_work/fccm19_experiments/PR/pe_num/PR_part_16PE/tmp/graph_fpga/system/synthesis/submodules/altera_merlin_burst_uncompressor.sv
+2019.03.12.11:19:20 Info: crosser: "mm_interconnect_2" instantiated altera_avalon_st_handshake_clock_crosser "crosser"
+2019.03.12.11:19:20 Info: Reusing file /home/xinyuc/work/de5_work/fccm19_experiments/PR/pe_num/PR_part_16PE/tmp/graph_fpga/system/synthesis/submodules/altera_avalon_st_pipeline_base.v
+2019.03.12.11:19:20 Info: Reusing file /home/xinyuc/work/de5_work/fccm19_experiments/PR/pe_num/PR_part_16PE/tmp/graph_fpga/system/synthesis/submodules/altera_std_synchronizer_nocut.v
+2019.03.12.11:19:20 Info: limiter_pipeline: "mm_interconnect_2" instantiated altera_avalon_st_pipeline_stage "limiter_pipeline"
+2019.03.12.11:19:20 Info: Reusing file /home/xinyuc/work/de5_work/fccm19_experiments/PR/pe_num/PR_part_16PE/tmp/graph_fpga/system/synthesis/submodules/altera_avalon_st_pipeline_base.v
+2019.03.12.11:19:20 Info: avalon_st_adapter: "mm_interconnect_2" instantiated altera_avalon_st_adapter "avalon_st_adapter"
+2019.03.12.11:19:20 Info: avalon_st_adapter_003: "mm_interconnect_2" instantiated altera_avalon_st_adapter "avalon_st_adapter_003"
+2019.03.12.11:19:20 Info: avalon_st_adapter_007: "mm_interconnect_2" instantiated altera_avalon_st_adapter "avalon_st_adapter_007"
+2019.03.12.11:19:20 Info: router: "mm_interconnect_3" instantiated altera_merlin_router "router"
+2019.03.12.11:19:20 Info: router_001: "mm_interconnect_3" instantiated altera_merlin_router "router_001"
+2019.03.12.11:19:20 Info: cmd_demux: "mm_interconnect_3" instantiated altera_merlin_demultiplexer "cmd_demux"
+2019.03.12.11:19:20 Info: cmd_mux: "mm_interconnect_3" instantiated altera_merlin_multiplexer "cmd_mux"
+2019.03.12.11:19:20 Info: Reusing file /home/xinyuc/work/de5_work/fccm19_experiments/PR/pe_num/PR_part_16PE/tmp/graph_fpga/system/synthesis/submodules/altera_merlin_arbitrator.sv
+2019.03.12.11:19:20 Info: rsp_demux: "mm_interconnect_3" instantiated altera_merlin_demultiplexer "rsp_demux"
+2019.03.12.11:19:20 Info: rsp_mux: "mm_interconnect_3" instantiated altera_merlin_multiplexer "rsp_mux"
+2019.03.12.11:19:20 Info: Reusing file /home/xinyuc/work/de5_work/fccm19_experiments/PR/pe_num/PR_part_16PE/tmp/graph_fpga/system/synthesis/submodules/altera_merlin_arbitrator.sv
+2019.03.12.11:19:20 Info: router: "mm_interconnect_5" instantiated altera_merlin_router "router"
+2019.03.12.11:19:20 Info: router_001: "mm_interconnect_5" instantiated altera_merlin_router "router_001"
+2019.03.12.11:19:20 Info: em_pc_0_avl_in_burst_adapter: "mm_interconnect_5" instantiated altera_merlin_burst_adapter "em_pc_0_avl_in_burst_adapter"
+2019.03.12.11:19:20 Info: Reusing file /home/xinyuc/work/de5_work/fccm19_experiments/PR/pe_num/PR_part_16PE/tmp/graph_fpga/system/synthesis/submodules/altera_merlin_address_alignment.sv
+2019.03.12.11:19:20 Info: Reusing file /home/xinyuc/work/de5_work/fccm19_experiments/PR/pe_num/PR_part_16PE/tmp/graph_fpga/system/synthesis/submodules/altera_avalon_st_pipeline_stage.sv
+2019.03.12.11:19:20 Info: Reusing file /home/xinyuc/work/de5_work/fccm19_experiments/PR/pe_num/PR_part_16PE/tmp/graph_fpga/system/synthesis/submodules/altera_avalon_st_pipeline_base.v
+2019.03.12.11:19:20 Info: cmd_demux: "mm_interconnect_5" instantiated altera_merlin_demultiplexer "cmd_demux"
+2019.03.12.11:19:20 Info: cmd_mux: "mm_interconnect_5" instantiated altera_merlin_multiplexer "cmd_mux"
+2019.03.12.11:19:20 Info: Reusing file /home/xinyuc/work/de5_work/fccm19_experiments/PR/pe_num/PR_part_16PE/tmp/graph_fpga/system/synthesis/submodules/altera_merlin_arbitrator.sv
+2019.03.12.11:19:20 Info: rsp_mux: "mm_interconnect_5" instantiated altera_merlin_multiplexer "rsp_mux"
+2019.03.12.11:19:20 Info: Reusing file /home/xinyuc/work/de5_work/fccm19_experiments/PR/pe_num/PR_part_16PE/tmp/graph_fpga/system/synthesis/submodules/altera_merlin_arbitrator.sv
+2019.03.12.11:19:20 Info: router: "mm_interconnect_6" instantiated altera_merlin_router "router"
+2019.03.12.11:19:20 Info: router_002: "mm_interconnect_6" instantiated altera_merlin_router "router_002"
+2019.03.12.11:19:20 Info: cmd_demux: "mm_interconnect_6" instantiated altera_merlin_demultiplexer "cmd_demux"
+2019.03.12.11:19:20 Info: cmd_mux: "mm_interconnect_6" instantiated altera_merlin_multiplexer "cmd_mux"
+2019.03.12.11:19:20 Info: Reusing file /home/xinyuc/work/de5_work/fccm19_experiments/PR/pe_num/PR_part_16PE/tmp/graph_fpga/system/synthesis/submodules/altera_merlin_arbitrator.sv
+2019.03.12.11:19:20 Info: rsp_demux: "mm_interconnect_6" instantiated altera_merlin_demultiplexer "rsp_demux"
+2019.03.12.11:19:20 Info: rsp_mux: "mm_interconnect_6" instantiated altera_merlin_multiplexer "rsp_mux"
+2019.03.12.11:19:20 Info: Reusing file /home/xinyuc/work/de5_work/fccm19_experiments/PR/pe_num/PR_part_16PE/tmp/graph_fpga/system/synthesis/submodules/altera_merlin_arbitrator.sv
+2019.03.12.11:19:20 Info: router: "mm_interconnect_8" instantiated altera_merlin_router "router"
+2019.03.12.11:19:20 Info: router_001: "mm_interconnect_8" instantiated altera_merlin_router "router_001"
+2019.03.12.11:19:20 Info: cmd_demux: "mm_interconnect_8" instantiated altera_merlin_demultiplexer "cmd_demux"
+2019.03.12.11:19:20 Info: cmd_mux: "mm_interconnect_8" instantiated altera_merlin_multiplexer "cmd_mux"
+2019.03.12.11:19:20 Info: Reusing file /home/xinyuc/work/de5_work/fccm19_experiments/PR/pe_num/PR_part_16PE/tmp/graph_fpga/system/synthesis/submodules/altera_merlin_arbitrator.sv
+2019.03.12.11:19:20 Info: rsp_mux: "mm_interconnect_8" instantiated altera_merlin_multiplexer "rsp_mux"
+2019.03.12.11:19:20 Info: Reusing file /home/xinyuc/work/de5_work/fccm19_experiments/PR/pe_num/PR_part_16PE/tmp/graph_fpga/system/synthesis/submodules/altera_merlin_arbitrator.sv
+2019.03.12.11:19:20 Info: router: "mm_interconnect_9" instantiated altera_merlin_router "router"
+2019.03.12.11:19:20 Info: router_001: "mm_interconnect_9" instantiated altera_merlin_router "router_001"
+2019.03.12.11:19:20 Info: cmd_demux: "mm_interconnect_9" instantiated altera_merlin_demultiplexer "cmd_demux"
+2019.03.12.11:19:20 Info: cmd_mux: "mm_interconnect_9" instantiated altera_merlin_multiplexer "cmd_mux"
+2019.03.12.11:19:20 Info: Reusing file /home/xinyuc/work/de5_work/fccm19_experiments/PR/pe_num/PR_part_16PE/tmp/graph_fpga/system/synthesis/submodules/altera_merlin_arbitrator.sv
+2019.03.12.11:19:20 Info: rsp_mux: "mm_interconnect_9" instantiated altera_merlin_multiplexer "rsp_mux"
+2019.03.12.11:19:20 Info: Reusing file /home/xinyuc/work/de5_work/fccm19_experiments/PR/pe_num/PR_part_16PE/tmp/graph_fpga/system/synthesis/submodules/altera_merlin_arbitrator.sv
+2019.03.12.11:19:20 Info: avalon_st_adapter: "mm_interconnect_9" instantiated altera_avalon_st_adapter "avalon_st_adapter"
+2019.03.12.11:19:20 Info: ng0: "c0" instantiated altera_mem_if_nextgen_ddr3_controller_core "ng0"
+2019.03.12.11:19:20 Info: a0: "c0" instantiated alt_mem_ddrx_mm_st_converter "a0"
+2019.03.12.11:19:20 Info: router: "mm_interconnect_0" instantiated altera_merlin_router "router"
+2019.03.12.11:19:20 Info: router_001: "mm_interconnect_0" instantiated altera_merlin_router "router_001"
+2019.03.12.11:19:20 Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
+2019.03.12.11:19:20 Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
+2019.03.12.11:19:20 Info: Reusing file /home/xinyuc/work/de5_work/fccm19_experiments/PR/pe_num/PR_part_16PE/tmp/graph_fpga/system/synthesis/submodules/altera_merlin_arbitrator.sv
+2019.03.12.11:19:20 Info: rsp_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux"
+2019.03.12.11:19:20 Info: rsp_demux_002: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux_002"
+2019.03.12.11:19:20 Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
+2019.03.12.11:19:20 Info: Reusing file /home/xinyuc/work/de5_work/fccm19_experiments/PR/pe_num/PR_part_16PE/tmp/graph_fpga/system/synthesis/submodules/altera_merlin_arbitrator.sv
+2019.03.12.11:19:20 Info: router: "mm_interconnect_0" instantiated altera_merlin_router "router"
+2019.03.12.11:19:20 Info: router_001: "mm_interconnect_0" instantiated altera_merlin_router "router_001"
+2019.03.12.11:19:20 Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
+2019.03.12.11:19:20 Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
+2019.03.12.11:19:20 Info: Reusing file /home/xinyuc/work/de5_work/fccm19_experiments/PR/pe_num/PR_part_16PE/tmp/graph_fpga/system/synthesis/submodules/altera_merlin_arbitrator.sv
+2019.03.12.11:19:20 Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
+2019.03.12.11:19:20 Info: Reusing file /home/xinyuc/work/de5_work/fccm19_experiments/PR/pe_num/PR_part_16PE/tmp/graph_fpga/system/synthesis/submodules/altera_merlin_arbitrator.sv
+2019.03.12.11:19:20 Info: router: "mm_interconnect_1" instantiated altera_merlin_router "router"
+2019.03.12.11:19:20 Info: router_001: "mm_interconnect_1" instantiated altera_merlin_router "router_001"
+2019.03.12.11:19:20 Info: router_002: "mm_interconnect_1" instantiated altera_merlin_router "router_002"
+2019.03.12.11:19:20 Info: cmd_demux: "mm_interconnect_1" instantiated altera_merlin_demultiplexer "cmd_demux"
+2019.03.12.11:19:20 Info: cmd_mux: "mm_interconnect_1" instantiated altera_merlin_multiplexer "cmd_mux"
+2019.03.12.11:19:20 Info: Reusing file /home/xinyuc/work/de5_work/fccm19_experiments/PR/pe_num/PR_part_16PE/tmp/graph_fpga/system/synthesis/submodules/altera_merlin_arbitrator.sv
+2019.03.12.11:19:20 Info: rsp_demux: "mm_interconnect_1" instantiated altera_merlin_demultiplexer "rsp_demux"
+2019.03.12.11:19:20 Info: rsp_demux_002: "mm_interconnect_1" instantiated altera_merlin_demultiplexer "rsp_demux_002"
+2019.03.12.11:19:20 Info: rsp_mux: "mm_interconnect_1" instantiated altera_merlin_multiplexer "rsp_mux"
+2019.03.12.11:19:20 Info: Reusing file /home/xinyuc/work/de5_work/fccm19_experiments/PR/pe_num/PR_part_16PE/tmp/graph_fpga/system/synthesis/submodules/altera_merlin_arbitrator.sv
+2019.03.12.11:19:20 Info: modular_sgdma_dispatcher_0: "dma" instantiated modular_sgdma_dispatcher "modular_sgdma_dispatcher_0"
+2019.03.12.11:19:22 Info: dma_read_master: "dma" instantiated dma_read_master "dma_read_master"
+2019.03.12.11:19:24 Info: dma_write_master: "dma" instantiated dma_write_master "dma_write_master"
+2019.03.12.11:19:25 Info: mm_interconnect_0: "dma" instantiated altera_mm_interconnect "mm_interconnect_0"
+2019.03.12.11:19:25 Info: mm_interconnect_1: "dma" instantiated altera_mm_interconnect "mm_interconnect_1"
+2019.03.12.11:19:25 Info: router: "mm_interconnect_1" instantiated altera_merlin_router "router"
+2019.03.12.11:19:25 Info: router_003: "mm_interconnect_1" instantiated altera_merlin_router "router_003"
+2019.03.12.11:19:25 Info: cmd_demux: "mm_interconnect_1" instantiated altera_merlin_demultiplexer "cmd_demux"
+2019.03.12.11:19:25 Info: cmd_mux: "mm_interconnect_1" instantiated altera_merlin_multiplexer "cmd_mux"
+2019.03.12.11:19:25 Info: Reusing file /home/xinyuc/work/de5_work/fccm19_experiments/PR/pe_num/PR_part_16PE/tmp/graph_fpga/system/synthesis/submodules/altera_merlin_arbitrator.sv
+2019.03.12.11:19:25 Info: rsp_demux: "mm_interconnect_1" instantiated altera_merlin_demultiplexer "rsp_demux"
+2019.03.12.11:19:25 Info: rsp_mux: "mm_interconnect_1" instantiated altera_merlin_multiplexer "rsp_mux"
+2019.03.12.11:19:25 Info: Reusing file /home/xinyuc/work/de5_work/fccm19_experiments/PR/pe_num/PR_part_16PE/tmp/graph_fpga/system/synthesis/submodules/altera_merlin_arbitrator.sv
+2019.03.12.11:19:25 Info: router: "mm_interconnect_2" instantiated altera_merlin_router "router"
+2019.03.12.11:19:25 Info: router_001: "mm_interconnect_2" instantiated altera_merlin_router "router_001"
+2019.03.12.11:19:25 Info: router_002: "mm_interconnect_2" instantiated altera_merlin_router "router_002"
+2019.03.12.11:19:25 Info: router_003: "mm_interconnect_2" instantiated altera_merlin_router "router_003"
+2019.03.12.11:19:25 Info: cmd_demux: "mm_interconnect_2" instantiated altera_merlin_demultiplexer "cmd_demux"
+2019.03.12.11:19:25 Info: cmd_mux: "mm_interconnect_2" instantiated altera_merlin_multiplexer "cmd_mux"
+2019.03.12.11:19:25 Info: Reusing file /home/xinyuc/work/de5_work/fccm19_experiments/PR/pe_num/PR_part_16PE/tmp/graph_fpga/system/synthesis/submodules/altera_merlin_arbitrator.sv
+2019.03.12.11:19:25 Info: rsp_demux: "mm_interconnect_2" instantiated altera_merlin_demultiplexer "rsp_demux"
+2019.03.12.11:19:25 Info: rsp_mux: "mm_interconnect_2" instantiated altera_merlin_multiplexer "rsp_mux"
+2019.03.12.11:19:25 Info: Reusing file /home/xinyuc/work/de5_work/fccm19_experiments/PR/pe_num/PR_part_16PE/tmp/graph_fpga/system/synthesis/submodules/altera_merlin_arbitrator.sv
+2019.03.12.11:19:25 Info: avalon_st_adapter_001: "mm_interconnect_2" instantiated altera_avalon_st_adapter "avalon_st_adapter_001"
+2019.03.12.11:19:25 Info: error_adapter_0: "avalon_st_adapter" instantiated error_adapter "error_adapter_0"
+2019.03.12.11:19:25 Info: error_adapter_0: "avalon_st_adapter_003" instantiated error_adapter "error_adapter_0"
+2019.03.12.11:19:25 Info: error_adapter_0: "avalon_st_adapter_007" instantiated error_adapter "error_adapter_0"
+2019.03.12.11:19:25 Info: error_adapter_0: "avalon_st_adapter" instantiated error_adapter "error_adapter_0"
+2019.03.12.11:19:25 Info: error_adapter_0: "avalon_st_adapter_001" instantiated error_adapter "error_adapter_0"
+2019.03.12.11:19:25 Info: system: Done "system" with 170 modules, 552 files

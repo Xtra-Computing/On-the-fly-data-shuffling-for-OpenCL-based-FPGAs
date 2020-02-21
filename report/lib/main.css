@@ -1,0 +1,395 @@
+section
+{
+  float: left;
+  overflow-x: auto;
+  padding: 2px;
+}
+
+footer
+{
+  position: fixed;
+  float: right;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: blue;
+  color: white;
+  clear: left;
+  text-align: center;
+  padding: 5px 0;
+}
+
+/* Header Bar*/
+#header-bar 
+{
+    border-radius:0px !important;
+    margin-bottom: 0px;
+    border-left: 0px;
+    border-top: 0px;
+    border-right: 0px;
+}
+
+#collapse_sidebar
+{
+    font-size: 20px;
+    border: 1px solid transparent;
+}
+
+/* Ace Editor */
+
+.input-group-btn 
+{
+    width:100%;
+    display:block;
+}
+
+#editor-nav-button
+{
+    width:100%; 
+    text-align:left;
+    margin-left: 0px;
+    margin-right: 5px;
+}
+
+#close-source
+{
+    width:40px;
+    color: black;
+    border: 1px solid rgb(150, 150, 150);
+    margin-left:5px;
+}
+
+#editor-nav-button, #close-source
+{
+    height: 40px;
+    margin-right:0px !important;
+    border-radius:4px !important; 
+    margin-bottom:5px;
+}
+
+.select .caret 
+{
+    position:absolute; 
+    right:10px; 
+    margin-top:10px;
+}
+
+.selected {
+    padding-right:10px;
+}
+
+.option {
+    width:100%;
+}
+
+#tabs
+{
+  float: right;
+  width: 39%;
+}
+
+.arch-view
+{
+  background: lightblue;
+  border: 1px;
+  height: 200px;
+  padding: 8px;
+  overflow-y: scroll;
+  resize: vertical;
+}
+
+.classWithPad 
+{
+  margin:10px; 
+  padding:0px; 
+}
+
+.well
+{
+  overflow: auto;
+  height: 100%;
+  width: 100%;
+}
+
+/* Remove bottom margin from area report tables
+ * embedded inside wells.
+ */
+.well>table
+{
+  margin-bottom: 0px;
+}
+
+.nav-tabs li a
+{
+  font-size: 10px;
+}
+
+.chartGroup .background
+{
+  /* Match the background color of the well */
+  fill: #f5f5f5;
+  stroke-width: 0.5px;
+}
+
+/* These divs have their height set based on their
+ * content.
+ */
+#table-header thead {
+  overflow-x: hidden;
+}
+
+#table-header {
+  background-color: white;
+  z-index:2;
+}
+
+#table-header th {
+  background-color: white;
+  padding-left: 8px;
+  padding-right: 0px;
+}
+
+.table th,td
+{
+  font-family: Consolas, monaco, monospace;
+  font-size: 11px;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  vertical-align: middle !important;
+}
+
+.glyphicon-chevron-down:before,  .glyphicon-chevron-down:after, 
+.glyphicon-chevron-right:before, .glyphicon-chevron-right:after
+{
+  z-index: 1;
+}
+
+tbody .res-title
+{
+  max-width: 300px;
+}
+
+tbody .res-val
+{
+  max-width: 100px;
+}
+
+.ar-toggle, .ar-toggle:active, .ar-toggle:focus, .ar-toggle:hover {
+  text-decoration: none;
+}
+
+#DetailsTable
+{
+  table-layout: fixed;
+  width: 100%;
+}
+
+#details ul
+{
+  white-space: pre-wrap;
+}
+
+.details-list
+{
+  padding-left: 0px;
+}
+
+/* Report sizing and formatting */
+#report-pane
+{
+  height: 750px;
+  min-height: 300px;
+  padding: 10px;
+  width: 60%;
+}
+
+#editor-pane
+{
+  height: 750px;
+  min-height: 300px;
+  padding-top: 10px;
+  padding-left: 0px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  width: 40%;
+}
+
+#spv 
+{
+    margin:0px;
+}
+
+#detail-pane
+{
+  border: #e5e5e5;
+  margin-left: 0px !important;
+  padding-top: 0px !important;
+  padding-left: 0px !important;
+  padding-right: 10px !important;
+  width: 100%;
+}
+
+#detail-panel
+{
+  margin-right: 0px !important;
+  margin-top: 0px !important;
+}
+
+#details 
+{
+  overflow:auto;
+  height: 150px;
+}
+
+#opt-area-panel, #area-opt-pane, #spv-pane
+{
+  height: 100% !important;
+  margin: 0px;
+}
+#report-panel-body
+{
+  height: 100% !important;
+  overflow-y: hidden;
+}
+
+#opt-body
+{
+  height: 100%;
+  overflow-y: auto;
+}
+
+#report-body
+{
+  position:relative;
+  padding-top: 0px !important;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: auto;
+}
+
+#spv-panel {
+  height: 100% !important;
+}
+
+#SPG
+{
+  position: relative;
+  padding-top: 0px !important;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  padding-bottom: 0px !important;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  height: 100%;
+}
+
+.layers 
+{
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background-color: white;
+  z-index:2;
+  padding-left:10px;
+  padding-right:10px;
+  padding-top:10px;
+  padding-bottom:10px;
+  border-left: 1px solid;
+  border-bottom: 1px solid;
+  border-color:#dddddd; 
+  border-bottom-left-radius:4px;
+  font-size:12px;
+}
+
+/* Row coloring and formatting */
+.res-heading-row:hover td 
+{
+  background-color: white !important; 
+}
+
+.module-totalres-row, .partition-totalres-row
+{ 
+  background-color: #0099ff !important; 
+}
+
+.module-totalres-row:hover td, .partition-totalres-row:hover td
+{
+  background-color: #0080E6 !important; 
+}
+
+.function-totalres-row 
+{
+  background-color: #f66666; 
+}
+
+.function-totalres-row:hover td
+{ 
+  background-color: #e55555 !important; 
+}
+
+.basicblock-totalres-row 
+{
+  background-color: #faaaaa; 
+}
+
+.basicblock-totalres-row:hover td
+{
+  background-color: #e99999 !important; 
+}
+
+.module-totalres-row, .function-totalres-row, .res-heading-row, .partition-totalres-row
+{ 
+  font-weight: bold; 
+}
+
+/* Stall point viewer formatting*/
+.clusters rect {
+  fill: none;
+  stroke: #000;
+  stroke-width: 1.5px;
+}
+
+text {
+  font-weight: 300;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serf;
+  font-size: 14px;
+}
+
+.edgePath path {
+  stroke: #333;
+  stroke-width: 2px;
+  opacity: 0.3;
+}
+
+.tipsy .name {
+  font-family: Consolas, monaco, monospace;
+  font-size: 13px;
+  font-weight: bold;
+  color: #1d99c1;
+  margin: 0;
+  text-align: center;
+}
+
+.tipsy .description {
+  font-family: Consolas, monaco, monospace;
+  font-size: 11px;
+  word-wrap: break-word;
+  text-align: left;
+}
+
+.node rect, .node circle, .node polygon
+{
+  cursor: pointer;
+  fill: #ffffff;
+  fill-opacity: 1;
+  stroke: #333333;
+  stroke-width: 1px;
+}
+
+.node text
+{
+  font: 10px sans-serif;
+  pointer-events: none;
+}
