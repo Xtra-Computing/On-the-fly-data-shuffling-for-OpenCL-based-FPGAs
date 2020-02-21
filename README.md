@@ -1,7 +1,7 @@
 # On-the-fly Data Shuffling for OpenCL-based FPGAs
 
 ## Prerequisites
-* The gcc4.8 or above
+* The gcc-4.8 or above
 * The Altera OpenCL SDK 16.0.2 for FPGA 
 * The De5net board 
 
