@@ -1,4 +1,4 @@
-# On-the-fly-data-shuffling-for-OpenCL-based-FPGAs
+# On-the-fly Data Shuffling for OpenCL-based FPGAs
 
 ## Prerequisites
 * The gcc4.8 or above
