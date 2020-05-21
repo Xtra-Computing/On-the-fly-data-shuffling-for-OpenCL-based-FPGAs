@@ -1,4 +1,4 @@
-# On-the-fly Data Shuffling for OpenCL-based FPGAs
+# ThunderGP: Efficient Graph Processing on OpenCL-based FPGAs
 
 ## Prerequisites
 * The gcc-4.8 or above
@@ -18,6 +18,7 @@ $ ./host
 ```
 
 ## Cite this work
+If you use ThunderGP  in your paper, please cite our work ([full version](https://www.comp.nus.edu.sg/~hebs/pub/fpl19-graph.pdf)).
 ```
 @inproceedings{chen2019fly,
   title={On-The-Fly Parallel Data Shuffling for Graph Processing on OpenCL-based FPGAs},
@@ -28,3 +29,11 @@ $ ./host
   organization={IEEE}
 }
 ```
+### Related publications
+* Xinyu Chen*, Ronak Bajaj^, Yao Chen, Jiong He, Bingsheng He, Weng-Fai Wong and Deming Chen. [Is FPGA useful for hash joins](https://www.comp.nus.edu.sg/~hebs/pub/cidr20-join.pdf). CIDR 2020: Conference on Innovative Data Systems Research
+
+
+## Related systems
+
+* Graph systems on GPU: [G3](https://github.com/Xtra-Computing/G3) | [Medusa](https://github.com/Xtra-Computing/Medusa)
+* Other Thunder-series systems in Xtra NUS: [ThunderGBM](https://github.com/Xtra-Computing/thundergbm) | [ThunderSVM](https://github.com/Xtra-Computing/thundersvm)
